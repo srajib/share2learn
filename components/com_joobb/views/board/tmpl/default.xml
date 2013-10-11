@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JOOBB_BOARDLAYOUT">
+		<message>
+			<![CDATA[COM_JOOBB_BOARDLAYOUTDESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JOOBB_BOARDLAYOUT</name>
+		<description>COM_JOOBB_BOARDLAYOUTDESC</description>
+	</state>
+</metadata>

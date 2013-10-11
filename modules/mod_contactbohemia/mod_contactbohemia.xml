@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.6.0">
+        <name>Form</name> 
+        <author>Kent Elchuk</author> 
+        <creationDate>2010-08-18</creationDate> 
+        <copyright></copyright> 
+        <license>GPL 2.0</license> 
+        <authorEmail>kent@bohemiawebsites.com</authorEmail> 
+        <authorUrl>www.bohemiawebsites.com</authorUrl>         <version>1.0.0</version> 
+        <description>Contact Form</description>	
+		<files>       
+
+                <filename module="mod_contactbohemia">mod_contactbohemia.php</filename>
+				<filename module="mod_contactbohemia">index.html</filename>
+                <filename module="mod_contactbohemia">tmpl/index.html</filename>
+				<filename module="mod_contactbohemia">tmpl/contact.php</filename>
+				<filename module="mod_contactbohemia">tmpl/images/index.html</filename>
+				<filename module="mod_contactbohemia">tmpl/images/contact_enGB.gif</filename>
+				<filename module="mod_contactbohemia">tmpl/default.php</filename>
+				
+        </files>
+		
+		</install>
+

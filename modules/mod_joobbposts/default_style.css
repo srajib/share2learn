@@ -1,0 +1,29 @@
+/**
+ * @version $Id: default_style.css 223 2012-02-27 18:46:44Z sterob $
+ * @package Joo!BB
+ * @copyright Copyright (C) 2007-2012 Joo!BB Project. All rights reserved.
+ * @license GNU/GPL. Please see license.php in Joo!BB directory 
+ * for copyright notices and details.
+ * Joo!BB is free software. This version may have been NOT modified.
+ */
+
+/** 
+ * IMPORTANT
+ * Please copy the following css code to your template css and
+ * modify it according to your desires. 
+ */
+
+/* Joo!BB - Posts Module */
+.clr {clear: both;}
+.jpJoobbPosts {}
+.jpItem { font-size: 11px; }
+.jpSubject {
+	font-size: 15px;
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+a.jpItemLink:link, a.jpItemLink:visited {}
+a.jpItemLink:hover {}
+a.jpAuthorLink:link, a.jpAuthorLink:visited {}
+a.jpAuthorLink:hover {}
+span.jpGuest { font-weight: bold; }

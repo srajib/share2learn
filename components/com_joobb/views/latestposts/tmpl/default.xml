@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JOOBB_LATESTPOSTSLAYOUT">
+		<message>
+			<![CDATA[COM_JOOBB_LATESTPOSTSLAYOUTDESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JOOBB_LATESTPOSTSLAYOUT</name>
+		<description>COM_JOOBB_LATESTPOSTSLAYOUTDESC</description>
+	</state>
+</metadata>

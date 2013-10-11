@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5" method="upgrade">
+	<name>Joo!BB Posts</name>
+	<author>Joo!BB Project</author>
+	<creationDate>February 2012</creationDate>
+	<copyright>(C) 2007-2012 Joo!BB Project. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.9</version>
+	<description>MOD_JOOBB_POSTS_JOOBBPOSTSDESC</description>
+	<files>
+		<filename module="mod_joobbposts">mod_joobbposts.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_joobbposts.xml</filename>
+		<filename>helper.php</filename>
+		<filename>changelog.php</filename>
+		<filename>copyright.php</filename>
+		<filename>default_style.css</filename>
+		<filename>elements/index.html</filename>
+		<filename>elements/joobbcategories.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_joobbposts.ini</language>
+	</languages>
+	<params addpath="/modules/mod_joobbposts/elements/">
+		<param name="count" type="text" default="5" label="MOD_JOOBB_POSTS_COUNT" description="MOD_JOOBB_POSTS_COUNTDESC" />
+		<param name="items" type="list" default="0" label="MOD_JOOBB_POSTS_ITEMS" description="MOD_JOOBB_POSTS_ITEMSDESC">
+			<option value="0">MOD_JOOBB_POSTS_TOPICS</option>
+			<option value="1">MOD_JOOBB_POSTS_POSTS</option>
+	  	</param>
+		<param name="items_type" type="list" default="0" label="MOD_JOOBB_POSTS_ITEMSTYPE" description="MOD_JOOBB_POSTS_ITEMSTYPEDESC">
+			<option value="0">MOD_JOOBB_POSTS_LATEST</option>
+			<option value="1">MOD_JOOBB_POSTS_POPULAR</option>
+	  	</param>
+		<param name="exclude_categories" type="joobbcategories" default="" label="MOD_JOOBB_POSTS_EXCLUDECATEGORIES" description="MOD_JOOBB_POSTS_EXCLUDECATEGORIESDESC" />
+		<param name="since_last_visit" type="radio" default="1" label="MOD_JOOBB_POSTS_SINCELASTVISIT" description="MOD_JOOBB_POSTS_SINCELASTVISITDESC">
+			<option value="0">MOD_JOOBB_POSTS_NO</option>
+			<option value="1">MOD_JOOBB_POSTS_YES</option>
+		</param>
+	  	<param name="moduleclass_sfx" type="text" default="" label="MOD_JOOBB_POSTS_MODULECLASSSUFFIX" description="MOD_JOOBB_POSTS_MODULECLASSSUFFIXDESC" />
+	</params>
+</install>

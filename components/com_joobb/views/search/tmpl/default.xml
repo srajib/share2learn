@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JOOBB_SEARCHLAYOUT">
+		<message>
+			<![CDATA[COM_JOOBB_SEARCHLAYOUTDESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JOOBB_SEARCHLAYOUT</name>
+		<description>COM_JOOBB_SEARCHLAYOUTDESC</description>
+		<params>
+		</params>
+	</state>
+</metadata>

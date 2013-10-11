@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - Language Translation Override</name>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<author>GWE Systems Ltd</author>
+	<authorUrl>http://www.gwesystems.com</authorUrl>
+	<creationDate>December 2011</creationDate>
+	<copyright>2011 GWE Systems Ltd</copyright>
+	<version>1.3.4</version>
+	<description>When activated this plugin allows you to override specific translation files.  e.g. Create a file templates/{YOUR TEMPLATE}/language/en-GB/en-GB.com_content.ini and place in it any language strings you want to override from the main language en-GB.com_content.ini.  For optimal performance this plugin should be one of the first in the system plugins BUT AFTER JOOMFISH.
+     Additionally can now override css files loaded by components, modules and plugins that use the Joomla framework for loading css files.  For example if an addon loads a css file called components/com_addon/css/addon.css then if you create a new css file in templates/{YOUR TEMPLATE}/css/addon.css then this will be loaded AFTER the original so you can override css settings you want to change.
+	  Note too that this plugin allows Joomla 1.5 to use Joomla 1.6 language files natively.
+	</description>
+	<files>
+		<filename plugin="langoverride">langoverride.php</filename>
+	</files>	
+	<params>
+		<param name="overridecss" type="radio" default="0" label="Suppport CSS Overrides" description="If enabled then css files can be overriden or supplemented too." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="plugin" version="1.5" group="editors-bb" client="both" method="upgrade">
+    <name>Editor - Joo!BB</name>
+	<author>Joo!BB Project</author>
+	<creationDate>March 2012</creationDate>
+	<copyright>(C) 2007-2012 Joo!BB Project. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0 Phobos RC5</version>
+    <description>Joo!BB - Bulletin Board Editor</description>
+	<params addpath="/plugins/editors-bb/joobb/elements">
+		<param name="emotions_per_row" type="text" default="26" label="PLG_JOOBB_EDITOR_LABELEMOTIONSPERROW" description="PLG_JOOBB_EDITOR_LABELEMOTIONSPERROWDESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="editor_style" type="joobbeditorstyles" default="" label="PLG_JOOBB_EDITOR_EDITORSTYLE" description="PLG_JOOBB_EDITOR_EDITORSTYLEDESC" />
+	</params>
+	<params group="advanced">
+ 		<param name="show_button_bold" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONBOLD" description="PLG_JOOBB_EDITOR_LABELBUTTONBOLDDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_button_italic" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONITALIC" description="PLG_JOOBB_EDITOR_LABELBUTTONITALICDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_button_underline" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONUNDERLINE" description="PLG_JOOBB_EDITOR_LABELBUTTONUNDERLINEDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+  		<param name="show_button_strikeout" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONSTRIKEOUT" description="PLG_JOOBB_EDITOR_LABELBUTTONSTRIKEOUTDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+  		<param name="show_button_left" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONLEFT" description="PLG_JOOBB_EDITOR_LABELBUTTONLEFTDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_button_center" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONCENTER" description="PLG_JOOBB_EDITOR_LABELBUTTONCENTERDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_button_right" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONRIGHT" description="PLG_JOOBB_EDITOR_LABELBUTTONRIGHTDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_button_justify" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONJUSTIFY" description="PLG_JOOBB_EDITOR_LABELBUTTONJUSTIFYDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_button_color" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONCOLOR" description="PLG_JOOBB_EDITOR_LABELBUTTONCOLORDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+  		<param name="show_button_image" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONIMAGE" description="PLG_JOOBB_EDITOR_LABELBUTTONIMAGEDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_button_url" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONURL" description="PLG_JOOBB_EDITOR_LABELBUTTONURLDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_button_email" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONEMAIL" description="PLG_JOOBB_EDITOR_LABELBUTTONEMAILDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_button_code" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONCODE" description="PLG_JOOBB_EDITOR_LABELBUTTONCODEDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_button_bullist" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONBULLIST" description="PLG_JOOBB_EDITOR_LABELBUTTONBULLISTDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+  		<param name="show_button_bollist" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONBOLLIST" description="PLG_JOOBB_EDITOR_LABELBUTTONBOLLISTDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+   		<param name="show_button_youtube" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONYOUTUBE" description="PLG_JOOBB_EDITOR_LABELBUTTONYOUTUBEDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+    	<param name="show_button_gvideo" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONGVIDEO" description="PLG_JOOBB_EDITOR_LABELBUTTONGVIDEODESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+    	<param name="show_button_emotions" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONEMOTIONS" description="PLG_JOOBB_EDITOR_LABELBUTTONEMOTIONSDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+    	<param name="show_button_superscript" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONSUPERSCRIPT" description="PLG_JOOBB_EDITOR_LABELBUTTONSUPERSCRIPTDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+    	<param name="show_button_subscript" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELBUTTONSUBSCRIPT" description="PLG_JOOBB_EDITOR_LABELBUTTONSUBSCRIPTDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_combo_font" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELSELECTFONT" description="PLG_JOOBB_EDITOR_LABELSELECTFONTDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_combo_size" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELSELECTSIZE" description="PLG_JOOBB_EDITOR_LABELSELECTSIZEDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+ 		<param name="show_combo_table" type="radio" default="1" label="PLG_JOOBB_EDITOR_LABELSELECTTABLE" description="PLG_JOOBB_EDITOR_LABELSELECTTABLEDESC">
+ 			<option value="0">PLG_JOOBB_EDITOR_HIDE</option>
+ 			<option value="1">PLG_JOOBB_EDITOR_SHOW</option>
+ 		</param>
+	</params>
+	<files>
+		<filename plugin="joobb">joobb.php</filename>
+		<folder>joobb</folder>
+	</files>
+</install>

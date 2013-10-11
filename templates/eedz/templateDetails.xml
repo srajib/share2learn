@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+<install version="1.5" type="template">
+<name>EEDZ</name>
+<creationDate>21/07/2013</creationDate>
+<author>Orang Outang</author>
+<authorEmail>bfdbanesajfsdf@yahoo.com</authorEmail>
+<authorUrl>http://www.webtechbd.net</authorUrl>
+<copyright></copyright>
+<license>GNU/GPL</license>
+<version>1.0.0</version>
+<description>template designed by WebTECHBD</description>
+<files>
+<filename>index.php</filename>
+<filename>templateDetails.xml</filename>
+<filename>template_thumbnail.png</filename>
+<filename>images/arrow.png</filename>
+<filename>images/logo.png</filename>
+<filename>css/template.css</filename>
+</files>
+
+<positions>
+
+		<position>mainBanner</position>
+		<position>LeftMenu1</position>
+		<position>LeftMenu2</position>
+		<position>LeftMenu3</position>
+		<position>LeftMenu4</position>
+		<position>LeftMenu5</position>
+		<position>LeftMenu6</position>
+		<position>Jevents2</position>
+		<position>LeftMenu9</position>
+                <position>AGoogleMap</position>
+		<position>contact1</position>
+		<position>calendar1</position>
+		<position>menus2l</position>
+		<position>midjevents</position>
+		<position>rightMenu1</position>
+		<position>rightMenu2</position>
+		<position>rightMenu3</position>
+		<position>rightMenu4</position>
+		<position>NoticeMenu</position>
+		<position>rightQuickLink</position>
+		<position>mainMenu</position>
+		<position>leftMenu</position>
+		<position>top</position>
+		<position>breadcrumbs</position>
+		<position>mainBanner</position>
+		<position>search</position>
+		<position>topMenu</position>
+		<position>footerLeft</position>
+		<position>footerRight</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>debug</position>
+
+	</positions>
+
+</install>

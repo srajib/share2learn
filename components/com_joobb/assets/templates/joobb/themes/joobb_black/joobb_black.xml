@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="theme">
+    <name>Joo!BB - Style Black</name>
+	<author>Joo!BB Project</author>
+    <creationDate>April 2010</creationDate>
+	<copyright>(C) 2007-2010 Joo!BB Project. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+    <authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0 Phobos RC1</version>
+    <description>Joo!BB - Joo!BB Style Black.</description>
+    <files>
+		<filename>joobb_black.css</filename>
+    </files>
+</install>

@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS `#__joocm_avatars`;
+DROP TABLE IF EXISTS `#__joocm_configs`;
+DROP TABLE IF EXISTS `#__joocm_interfaces`;
+DROP TABLE IF EXISTS `#__joocm_links`;
+DROP TABLE IF EXISTS `#__joocm_profiles`;
+DROP TABLE IF EXISTS `#__joocm_profiles_fields`;
+DROP TABLE IF EXISTS `#__joocm_profiles_fields_lists`;
+DROP TABLE IF EXISTS `#__joocm_profiles_fields_lists_values`;
+DROP TABLE IF EXISTS `#__joocm_profiles_fields_sets`;
+DROP TABLE IF EXISTS `#__joocm_terms`;
+DROP TABLE IF EXISTS `#__joocm_timeformats`;
+DROP TABLE IF EXISTS `#__joocm_updates`;
+DROP TABLE IF EXISTS `#__joocm_users`;

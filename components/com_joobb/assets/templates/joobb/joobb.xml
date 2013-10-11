@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+    <name>Joo!BB - Standard Template</name>
+	<author>Joo!BB Project</author>
+	<creationDate>April 2010</creationDate>
+	<copyright>(C) 2007-2010 Joo!BB Project. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+    <authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0 Phobos RC1</version>
+    <description>This is the standard template for Joo!BB.</description>
+</install>

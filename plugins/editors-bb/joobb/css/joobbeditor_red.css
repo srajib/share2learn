@@ -1,0 +1,72 @@
+/**
+ * @version $Id: joobbeditor_red.css 222 2012-02-27 18:41:19Z sterob $
+ * @package Joo!BB
+ * @copyright Copyright (C) 2007-2012 Joo!BB Project. All rights reserved.
+ * @license GNU/GPL. Please see license.php in Joo!BB directory 
+ * for copyright notices and details.
+ * Joo!BB is free software. This version may have been NOT modified.
+ */
+
+.jbEditorButton {
+	margin-right: 2px;
+}
+
+a.jbEditorButton img {
+	width: 20px;
+	height: 20px;
+	margin-top: 2px;
+	border: 1px solid #cccccc !important;
+}
+
+a.jbEditorButton img:hover {
+	border: 1px solid #6a0a0a !important;
+	background-color: #d2b6b6;
+}
+
+.jbEditorSelect {
+    border-width: 1px;
+    width: 100px;
+    height: 25px;
+}
+
+#jbEmotions {
+	position: absolute;
+	left: 50%;
+	z-index: 2;
+	margin: 0;
+	width: 380px;
+	text-align: center !important;
+	display: none;
+	overflow: hidden;
+	background-color: #f0f0f0;
+	border: 1px solid #ffffff;
+	border-right-color:#a0a0a0;
+	border-bottom-color:#a0a0a0;
+}
+#jbEmotionsInner {
+	margin: 10px;
+}
+
+.jbEmotion {
+	border: none;
+	cursor: pointer;
+	margin: 2px;	
+}
+
+#jbImageDataEntry {
+	display: none;
+	width: 100%;
+	min-height: 165px;
+}
+
+.jbCursor {
+	cursor: pointer;	
+}
+
+.jbEditorTabs { line-height: 22px; position: relative; margin-top: 7px;}
+.jbEditorTab { display: inline }
+.jbEditorTabs div span { text-decoration: none; color: #444; background: #f0f0f0; padding: 3px; cursor: pointer; border: 1px solid #fff; border-bottom: 1px solid #a0a0a0; border-right: 1px solid #a0a0a0; }
+.jbEditorTabs div span { border-bottom: none; background: #ddd }
+.jbEditorTabs div span.jbEditorActiveTab { border-bottom: 1px solid #f0f0f0; background: #f0f0f0 }
+.jbTabContent { height: 135px; left:0; top: 22px; bottom:0; right:0; overflow:auto; padding: 3px; border: 1px solid #fff; border-top: 1px solid #ccc; border-left: 1px solid #ccc; border-bottom: 1px solid #a0a0a0; border-right: 1px solid #a0a0a0; }
+.jbTabContent { position:absolute; }

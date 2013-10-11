@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="emotionset">
+	<name>Joo!BB - Emotion Set Yellow</name>
+	<author>Joo!BB Project</author>
+	<creationDate>December 2009</creationDate>
+	<copyright>(C) 2007-2009 Joo!BB Project. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Joo!BB - Standard Emotion Set for Joo!BB.</description>
+	<emotionset translateable="1">
+		<emotion filename="smiley_biggrin.png" codes=":grin:,:),:-)" emotion="BB_SMILEYVERYHAPPY" hidden="0" />
+		<emotion filename="smiley_confused.png" codes=":con:,:?,:-?" emotion="BB_SMILEYCONFUSED" hidden="0" />
+		<emotion filename="smiley_cool.png" codes=":cool:,8),8-)" emotion="BB_SMILEYCOOL" hidden="0" />
+		<emotion filename="smiley_lol.png" codes=":lol:" emotion="BB_SMILEYLAUGHING" hidden="0" />
+		<emotion filename="smiley_sad.png" codes=":sad:,:(,:-(" emotion="BB_SMILEYSAD" hidden="0" />
+		<emotion filename="smiley_shocked.png" codes=":shock:" emotion="BB_SMILEYSHOCKED" hidden="0" />
+		<emotion filename="smiley_smile.png" codes=":smile:,:),:-)" emotion="BB_SMILEYSMILE" hidden="0" />
+		<emotion filename="smiley_surprised.png" codes=":eek:,:o,:-o" emotion="BB_SMILEYSUPRISED" hidden="0" />
+	</emotionset>
+</install>

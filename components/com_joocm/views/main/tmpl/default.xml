@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JOOCM_MAINPAGELAYOUT">
+		<message>
+			<![CDATA[COM_JOOCM_MAINPAGELAYOUTDESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JOOCM_MAINPAGELAYOUT</name>
+		<description>COM_JOOCM_MAINPAGELAYOUTDESC</description>
+	</state>
+</metadata>

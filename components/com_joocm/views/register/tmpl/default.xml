@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JOOCM_REGISTERLAYOUT">
+		<message>
+			<![CDATA[COM_JOOCM_REGISTERLAYOUTDESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JOOCM_REGISTERLAYOUT</name>
+		<description>COM_JOOCM_REGISTERLAYOUTDESC</description>
+	</state>
+</metadata>

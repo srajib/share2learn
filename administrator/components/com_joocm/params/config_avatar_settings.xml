@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="component">
+	<name>Avatar Settings</name>
+	<author>Joo!BB Project</author>
+	<copyright>(C) 2007-2012 Joo!BB. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Parameters for individual Avatar Configuration.</description>
+	<params>
+		<param name="image_resize" type="radio" default="1" label="COM_JOOCM_IMAGERESIZE" description="COM_JOOCM_IMAGERESIZEDESC">
+			<option value="0">COM_JOOCM_NO</option>
+			<option value="1">COM_JOOCM_YES</option>
+		</param>
+		<param name="image_resize_quality" type="text" size="5" default="100" label="COM_JOOCM_IMAGERESIZEQUALITY" description="COM_JOOCM_IMAGERESIZEQUALITYDESC" />
+		<param name="avatars_max" type="text" size="5" default="3" label="COM_JOOCM_AVATARMAX" description="COM_JOOCM_AVATARMAXDESC" />
+		<param name="avatar_width" type="text" size="5" default="100" label="COM_JOOCM_AVATARWIDTH" description="COM_JOOCM_AVATARWIDTHDESC" />
+		<param name="avatar_height" type="text" size="5" default="100" label="COM_JOOCM_AVATARHEIGHT" description="COM_JOOCM_AVATARHEIGHTDESC" />
+		<param name="avatar_max_file_size" type="text" size="5" default="8192" label="COM_JOOCM_AVATARMAXFILESIZE" description="COM_JOOCM_AVATARMAXFILESIZEDESC" />
+		<param name="avatar_save_path" type="text" size="50" default="media/joocm/avatars" label="COM_JOOCM_AVATARSAVEPATH" description="COM_JOOCM_AVATARSAVEPATHDESC" />
+		<param name="avatar_path" type="text" size="50" default="media/joocm/avatars" label="COM_JOOCM_AVATARPATH" description="COM_JOOCM_AVATARPATHDESC" />
+		<param name="avatar_file_types" type="text" size="50" default="jpg,png,gif,bmp" label="COM_JOOCM_AVATARFILETYPES" description="COM_JOOCM_AVATARFILETYPESDESC" />
+	</params>
+</install>

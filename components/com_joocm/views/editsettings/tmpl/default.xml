@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JOOCM_EDITSETTINGSLAYOUT">
+		<message>
+			<![CDATA[COM_JOOCM_EDITSETTINGSLAYOUTDESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JOOCM_EDITSETTINGSLAYOUT</name>
+		<description>COM_JOOCM_EDITSETTINGSLAYOUTDESC</description>
+	</state>
+</metadata>

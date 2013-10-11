@@ -1,0 +1,392 @@
+/**
+ * @version $Id: joocm.css 61 2010-03-19 13:26:52Z sterob $
+ * @package Joo!CM
+ * @copyright Copyright (C) 2007-2009 Joo!BB Project. All rights reserved.
+ * @license GNU/GPL. Please see license.php in Joo!BB directory 
+ * for copyright notices and details.
+ * Joo!CM is free software. This version may have been NOT modified.
+ */
+
+.clr {clear: both;}
+
+.cmProfile {
+	float: left;
+	max-width: 70%; min-width: 70%;
+}
+.cmProfileAvatar {
+	float: left;
+}
+.cmProfileAvatarImage {
+	border: solid 9px #e3e3e3;
+}
+
+/* profile view */
+.cmProfileView {
+	margin: 0px;
+	padding: 0px;
+	margin-left: 10px;
+	max-width: 70%; min-width: 70%;
+	float: left;
+}
+.cmProfileView h3 {
+	margin: 0 0 5px;
+	padding: 0 0 2px;
+	border-bottom: 1px solid #ccc;
+}
+
+.cmProfileDetails {
+	margin: 5px 0;
+	padding: 0px;
+	float: left;
+}
+ul.cmProfileDetails {
+	list-style-type: none;
+}
+ul.cmProfileDetails li {
+	display: inline;
+	background-image: none;
+	background: none;
+	float: left;
+}
+ul.cmProfileDetails li.title {
+	font-weight: 900;
+	min-width: 45%;
+}
+/* join view */
+.cmJoinView {
+	margin: 0px;
+	padding: 0px;
+	max-width: 90%; min-width: 90%;
+	float: left;
+}
+.cmJoinView h3 {
+	margin: 0px;
+	padding: 0 0 2px;
+	border-bottom: 1px solid #ccc;
+}
+.cmJoinButton {
+	padding: 9px 0 2px;
+}
+
+/* members navigation */
+.cmMembersNav a {
+	padding: 0 10px;
+	height: 11px;
+}
+.cmMembersNav a.cmActive {
+	font-weight: 600;
+}
+.cmMembersNavSpacer {
+	color: #cccccc;
+}
+
+/* profile box */
+div.cmProfileBox {
+	margin: 0px;
+	padding: 0px;
+	margin-left: 10px;
+	max-width: 25%; min-width: 25%;
+	float: left;
+}
+div.cmProfileBox h3 {
+	margin: 0 0 5px;
+	padding: 0 0 2px;
+	border-bottom: 1px solid #ccc;
+}
+ul.cmProfileBox {
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+	list-style: none;
+}
+ul.cmProfileBox li {
+	background: none;
+}
+ul.cmProfileBox li.infoDesc {
+	margin-bottom: 10px;
+}
+
+.cmFieldSetName {
+	border-bottom: solid 1px #cccccc;
+	margin-top: 10px;
+	font-size: 110%;
+	color: #bbbbbb;
+	font-weight: 900;
+}
+.cmFieldTitle {
+	font-weight: 900;
+	font-size: 90%;
+	color: #633b18;
+	margin-top: 5px;
+}
+.cmFieldValue {
+    font-size: 90%;
+}
+
+/* avatar description */
+.cmAvatarDesc {
+	margin: 0px;
+	padding: 0px;
+	margin-left: 10px;
+	max-width: 80%; min-width: 70%;
+	float: left;
+}
+.cmAvatarDesc p {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+.cmAvatarDesc ul {
+	list-style:disc;
+}
+
+/**
+ * avatars 
+ */
+ul.cmMyAvatars {
+	list-style-type: none;
+}
+ul.cmMyAvatars li {
+	display: inline;
+	background-image: none;
+	background: none;
+	cursor: pointer;
+	margin-right: 10px;
+	float: left;
+}
+ul.cmMyAvatars li.title {
+	font-weight: 900;
+	min-width: 40%;
+}
+
+.avatars li {
+	background: none;
+	padding: 0px;
+	margin-left: 10px;
+	cursor: pointer;
+    float: left;
+    list-style: none;
+    width: 100px;
+    height: 100px;
+	border: 1px solid #fff;
+}
+
+.cmMyAvatars .selected {
+	border: 1px solid #333333;
+}
+
+/* members list */
+.cmUserListHeader {
+	padding: 5px;
+	border: 1px solid #ccc;
+	text-align: right;
+	margin-bottom: 10px;
+	height: 25px;
+}
+.cmUserListHeader a.cmActive {
+	font-weight: 600;
+}
+.cmUserListProfile {
+	padding: 10px 0;
+	border: solid 1px #ccc;
+	margin: 0 0 5px;
+	position: relative;
+}
+.cmUserListAvatar {
+	float: left;
+	margin: 0 10px;
+}
+.cmUserListAvatarImage {
+	border: solid 3px #e3e3e3;
+}
+.cmUserListDetails {
+	margin: 0 10px 0 100px;
+}
+.cmUserListLine {
+	margin: 15px 10px 0 0;
+}
+.cmUserOnline {
+	background: transparent url(../images/state_online.png) no-repeat 0 0;
+	padding: 3px 3px 3px 20px;
+}
+.cmUserOffline {
+	background: transparent url(../images/state_offline.png) no-repeat 0 0;
+	padding: 3px 3px 3px 20px;
+}
+
+/* general styles */
+.cmLeft { float: left; }
+.cmRight { float: right; }
+.cmCenter { text-align: center; }
+.cmMarginTop5 { margin-top: 5px; }
+.cmPaddingLeft10 { padding-left: 10px; }
+.cmMarginBottom10 { margin-bottom: 10px; }
+.cmMarginBottom20 { margin-bottom: 20px; }
+
+/** cpanel settings **/
+#cpanel div.icon {
+	text-align: center;
+	margin-right: 5px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+#cpanel div.icon a {
+	display: block;
+	float: left;
+	border: 1px solid #f0f0f0;
+	height: 97px;
+	width: 108px;
+	color: #666;
+	text-decoration: none;
+}
+
+#cpanel div.icon a:hover {
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #fefefe;
+	color: #0B55C4;
+}
+
+#cpanel img  { padding: 10px 0; margin: 0 auto; }
+#cpanel span { display: block; text-align: center; }
+
+/**
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+.jcarousel-container {
+    position: relative;
+}
+
+.jcarousel-clip {
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.jcarousel-list {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-list li,
+.jcarousel-item {
+	background: none;
+	padding: 0px;
+	cursor: pointer;
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    width: 100px;
+    height: 100px;
+}
+
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+.jcarousel-next {
+    z-index: 3;
+    display: none;
+}
+
+.jcarousel-prev {
+    z-index: 3;
+    display: none;
+}
+
+/**
+ * jCarousel Skin for Joo!CM
+ */
+.jcarousel-skin-cm .jcarousel-container {
+    background: #ffffff;
+}
+
+.jcarousel-skin-cm .jcarousel-container-horizontal {
+    width: 538px;
+    padding: 0px 40px;
+}
+
+.jcarousel-skin-cm .jcarousel-clip-horizontal {
+    width:  100%;
+}
+
+.jcarousel-skin-cm .jcarousel-item {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff; list-style: none;
+}
+
+.jcarousel-skin-cm .jcarousel-item:hover,
+.jcarousel-skin-cm .jcarousel-item-selected {
+}
+
+.jcarousel-skin-cm .jcarousel-item-horizontal {
+    margin-right: 7px;
+}
+
+.jcarousel-skin-cm .jcarousel-item-placeholder {
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-cm .jcarousel-next-horizontal {
+    position: absolute;
+    top: 30%;
+    right: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(../images/imageNext.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-cm .jcarousel-next-horizontal:hover {
+    background-position: -32px 0;
+}
+
+.jcarousel-skin-cm .jcarousel-next-horizontal:active {
+    background-position: -64px 0;
+}
+
+.jcarousel-skin-cm .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-cm .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-cm .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0;
+}
+
+.jcarousel-skin-cm .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(../images/imagePrev.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-cm .jcarousel-prev-horizontal:hover {
+    background-position: -32px 0;
+}
+
+.jcarousel-skin-cm .jcarousel-prev-horizontal:active {
+    background-position: -64px 0;
+}
+
+.jcarousel-skin-cm .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-cm .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-cm .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0;
+}

@@ -1,0 +1,35 @@
+New in 1.1.2
+
+	+ Grid cells vertical alignment - it can be set to top (default) or bottom
+	> When the option to use thumbnails it set to on, the module will look for the bigger images to resize them. When that option is set to off, instead, it will look for the smaller and lighter ones
+
+New in 1.1.1
+
+	+ Trashed items recognition - it's now possible to limit articles shown to not trashed, trashed only and both
+	* Bugfix: New ordering options (Older to Newer, Least Read, Lower Rated) didn't work properly
+	* Bugfix: Featured articles options now work properly
+
+New in 1.1
+
+	* Categories to be included/excluded can be selected using a menu
+	* You can now select categories the articles should NOT be taken from
+	* Bugfix: the category the articles belong to should now be displayed correctly
+	* New "Limit by Author" option: show articles written by your JomSocial Friends
+	* Three new ordering conditions: Older to Newer, Least Read, Lower Rated
+	* Module Class Suffix support
+	* Bugfix: Hits, Comments and Ratings images didn't show up - the module was still looking for the mod_allnews_for_K2 folder
+	* You can now display a category's name, image and description at the top of the module
+	* Better Introtext handling: you can now start from the first occurrence of the <p> html tag, strip the plugins {code} or choose to display the fulltext instead of the introtext
+	* Custom shortened titles and intros ending can now be set
+	* Bugfix: multiple divs around positions (top, bottom)
+	* Thumbnails support!
+	* Category Images, Community Builder Avatars and JomSocial avatars can now be displayed as the article's image. 10 different options let you select an order of images to be displayed if the first one isn't present
+
+New in 1.0.1
+
+	* Name Changed to AiDaNews for K2
+	* Advanced Modules Manager's "Hide if Empty" option should work well now
+	* Minor Code Adjustments
+	* The Module is now W3C validated
+
+1.0 = First Release

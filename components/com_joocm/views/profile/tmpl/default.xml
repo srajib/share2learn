@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JOOCM_PROFILELAYOUT">
+		<message>
+			<![CDATA[COM_JOOCM_PROFILELAYOUTDESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JOOCM_PROFILELAYOUT</name>
+		<description>COM_JOOCM_PROFILELAYOUTDESC</description>
+	</state>
+</metadata>

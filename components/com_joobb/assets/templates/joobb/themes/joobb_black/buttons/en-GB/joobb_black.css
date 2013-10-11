@@ -1,0 +1,25 @@
+/**
+ * @version $Id: joobb_black.css 22 2009-12-25 20:07:22Z sterob $
+ * @package Joo!BB
+ * @copyright Copyright (C) 2007-2009 Joo!BB Project. All rights reserved.
+ * @license GNU/GPL. Please see license.php in Joo!BB directory 
+ * for copyright notices and details.
+ * Joo!BB is free software. This version may have been NOT modified.
+ */
+
+.jbButton { background: transparent; cursor: pointer; border: none; vertical-align: top; width: 100px; height: 25px; text-align: center; }
+a.jbButton:hover, button.jbButton:hover { background-position: 0 25px; }
+.jbButtonCancel { background-image: url(button_cancel.png); }
+.jbButtonDelete { background-image: url(button_delete.png); }
+.jbButtonEdit { background-image: url(button_edit.png); }
+.jbButtonGo { background-image: url(button_go.png); }
+.jbButtonLockTopic { background-image: url(button_locktopic.png); }
+.jbButtonMoveTopic { background-image: url(button_movetopic.png); }
+.jbButtonNewTopic { background-image: url(button_newtopic.png); }
+.jbButtonPostReply { background-image: url(button_postreply.png); }
+.jbButtonPreview { background-image: url(button_preview.png); }
+.jbButtonQuote { background-image: url(button_quote.png); }
+.jbButtonReport { background-image: url(button_report.png); }
+.jbButtonSearch { background-image: url(button_search.png); }
+.jbButtonSubmit { background-image: url(button_submit.png); }
+.jbButtonUnlockTopic { background-image: url(button_unlocktopic.png); }

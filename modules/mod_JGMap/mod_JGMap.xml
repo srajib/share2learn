@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module" client="site" method="upgrade">
+    <name>Google Map</name>
+    <author>Kermode Bear Software - James Hansen</author>
+    <authorEmail>kermode@kermodesoftware.com</authorEmail>
+    <authorUrl>www.kermodesoftware.com</authorUrl>
+    <creationDate>Nov 19, 2008</creationDate>
+    <copyright>Copyright 2008 2009 2010 Notice</copyright>
+    <license>GPL 3.0</license>
+    <version>0.13.7</version>
+    <description>Displays a Google map in a module position.</description>
+    <files>
+        <filename module="mod_JGMap">mod_JGMap.php</filename>
+		<filename>index.html</filename>
+		<folder>elements</folder>
+    </files>
+	<params addpath="/modules/mod_JGMap/elements">
+		<param type="text" name="width" label="Width" description="Width of map." default="200" size="3" maxlength="3" />
+		<param type="text" name="height" label="Height" description="Height of map." default="150" />
+		<param type="text" name="mapName" label="Map Name" description="Uniquie Javascript variable for multiplae maps on the same page!" default="map" />
+		<param type="gmaptype" name="mapType" label="Map Type" description="The default map type" var="map"/>
+		<param type="radio" name="smallmap" label="Small Map Control" description="Small map navigation icons." default="1">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+		<param type="checkbox" name="navControls" label="Navigation Controls"  />
+		<param type="radio" name="static" label="Static Map Position" description="Non movable map." default="0">
+			<option value="0">Non-Static</option>
+			<option value="1">Static</option>
+		</param>
+		<param  type="GMap" name="GMap" lat="48.5747" longitude="-123" label="Default Map Location" description="Select modules default map location" />
+		<param type="GMarker" name="Marker" label="Marker" description="" />
+	</params>
+</install>

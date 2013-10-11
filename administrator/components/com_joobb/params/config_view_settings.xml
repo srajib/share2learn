@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="component">
+	<name>View Configuration</name>
+	<author>Joo!BB Project</author>
+	<copyright>(C) 2007-2012 Joo!BB. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Parameters for individual View Configuration</description>
+	<params>
+		<param name="show_latestitems" type="radio" default="1" label="COM_JOOBB_SHOWLATESTITEMS" description="COM_JOOBB_SHOWLATESTITEMSDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="show_statistic" type="radio" default="1" label="COM_JOOBB_SHOWSTATISTIC" description="COM_JOOBB_SHOWSTATISTICDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="show_whosonline" type="radio" default="1" label="COM_JOOBB_SHOWWHOSONLINE" description="COM_JOOBB_SHOWWHOSONLINEDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="show_legend" type="radio" default="1" label="COM_JOOBB_SHOWLEGEND" description="COM_JOOBB_SHOWLEGENDDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="show_footer" type="radio" default="1" label="COM_JOOBB_SHOWFOOTER" description="COM_JOOBB_SHOWFOOTERDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+	</params>
+</install>

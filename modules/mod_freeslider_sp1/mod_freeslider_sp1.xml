@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>FreeSlider SP1</name>
+	<author>JoomShaper.com</author>
+	<creationDate>Oct 2010</creationDate>
+	<copyright>Copyright (C) 2010 JoomShaper.com. All rights reserved.</copyright>
+	<license>GNU/GPL V2 for PHP files</license>
+	<authorEmail>info@joomxpert.com</authorEmail>
+	<authorUrl>www.joomshaper.com</authorUrl>
+	<version>1.3.0</version>
+	<description>Free content slider module for joomla 1.5</description>
+	<files>
+		<filename module="mod_freeslider_sp1">mod_freeslider_sp1.php</filename>
+			<folder>tmpl/</folder>
+			<folder>assets/</folder>
+			<folder>elements/</folder>
+			<filename>helper.php</filename>
+			<filename>index.html</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_freeslider_sp1.ini</language>
+	</languages>
+	
+	<params addPath="/modules/mod_freeslider_sp1/elements">
+		<param name="moduleclass_sfx" type="text" default="" label="MODSFX" description="MODSFX_DESC" />
+		<param name="width" type="text" default="320" label="WIDTH" description="WIDTH_DESC" />
+		<param name="height" type="text" default="200" label="HEIGHT" description="HEIGHT_DESC" />
+		<param name="content_source" type="list" default="com_sections" label="CONTENT_SOURCE" description="CONTENT_SOURCE_DESC">
+			<option value="com_categories">COM_CATEGORIES</option>
+			<option value="k2_categories">K2_CATEGORIES</option>
+		</param>
+		<param name="com_categories" type="multicategories" default="" label="COM_CATEGORIES" description="COM_CATEGORIES_DESC" />			
+		<param name="k2_categories" type="k2multicategories" default="" label="K2_CATEGORIES" description="Select one ore more categories for which you want to filter an items list. Select none to fetch items from all categories." />
+		
+		<param name="show_front" type="list" default="1" label="SHOWFP" description="SHOWFP_DESC">
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+			<option value="2">SHOW_FP_ONLY</option>
+		</param>
+		<param name="user_id" type="list" default="0" label="UID" description="UID_DESC">
+			<option value="0">ANYONE</option>
+			<option value="by_me">BYME</option>
+			<option value="NOt_me">NOTBYME</option>
+	  	</param>
+		<param name="itemsOrdering" type="list" default="" label="ORDER" description="ORDER_DESC">
+			<option value="">DEFAULT</option>
+			<option value="date">DATE</option>
+			<option value="rdate">RDATE</option>
+			<option value="alpha">ALPHA</option>
+			<option value="ralpha">RALPHA</option>
+			<option value="order">ORDERING</option>
+        </param>
+		<param name="@spacer" type="spacer" default="&lt;div id=&quot;content-params&quot;   style=&quot;color:#fff;padding:4px;margin:0;background:#015595;&quot;&gt;Content Parameters&lt;/div&gt;" label="" description="" />
+
+		<param name="max_article" type="text" default="3" label="MAXARTICLE" description="MAXARTICLE_DESC" />
+		
+		<param name="showtitle" type="radio" default="1" label="SHOWTITLE" description="SHOWTITLE_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="titlelinked" type="radio" default="0" label="TITLELINKED" description="TITLELINKED_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>		
+		<param name="showarticle" type="radio" default="1" label="SHOWARTICLE" description="SHOWARTICLE_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>		
+		<param name="showimage" type="radio" default="1" label="SHOWIMAGE" description="SHOWIMAGE_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="imagelinked" type="radio" default="1" label="IMAGELINKED" description="IMAGELINKED_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>		
+		<param name="showmore" type="radio" default="1" label="SHOWMORE" description="SHOWMORE_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>		
+		<param name="moretext" type="text" default="Read More..." label="MORETEXT" description="MORETEXT_DESC" />	
+		
+		<param name="titleas" type="radio" default="1" label="TITLEAS" description="TITLEAS_DESC">
+			<option value="0">WLIMIT</option>
+			<option value="1">CLIMIT</option>
+			<option value="2">NOLIMIT</option>
+		</param>		
+		<param name="titlelimit" type="text" default="20" label="TITLELIMIT" description="TITLELIMIT_DESC" />
+		<param name="desclimitas" type="radio" default="2" label="DESCAS" description="DESCAS_DESC">
+			<option value="0">WLIMIT</option>
+			<option value="1">CLIMIT</option>
+			<option value="2">NOLIMIT</option>
+		</param>		
+		<param name="desclimit" type="text" default="30" label="DESCLIMIT" description="DESCLIMIT_DESC" />	
+
+		<param name="imgSource" type="list" default="M" label="K2IMG" description="K2IMG_DECS">
+		  <option value="XS">XSmall</option>
+		  <option value="S">Small</option>
+		  <option value="M">Medium</option>
+		  <option value="L">Large</option>
+		  <option value="XL">XLarge</option>
+		</param>		
+		
+		<param name="@spacer" type="spacer" default="&lt;div id=&quot;slide-params&quot;   style=&quot;color:#fff;padding:4px;margin:0;background:#015595;&quot;&gt;Slideshow Parameters&lt;/div&gt;" label="" description="" />		
+		<param name="showarrows" type="radio" default="1" label="SHOWARROWS" description="SHOWARROWS_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="effects" type="list" default="cover-horizontal-fade" label="EFFECTS" description="EFFECTS_DESC">
+			<option value="slide-horizontal">slide-horizontal</option>
+			<option value="slide-vertical">slide-vertical</option>
+			<option value="cover-inplace">cover-inplace</option>
+			<option value="cover-inplace-fade">cover-inplace-fade</option>
+			<option value="cover-horizontal">cover-horizontal</option>
+			<option value="cover-horizontal-fade">cover-horizontal-fade</option>
+			<option value="cover-horizontal-push">cover-horizontal-push</option>
+			<option value="cover-vertical">cover-vertical</option>
+			<option value="cover-vertical-fade">cover-vertical-fade</option>
+			<option value="cover-vertical-push">cover-vertical-push</option>
+		</param>		
+		<param name="interval" type="text" default="5000" label="INTERVAL" description="INTERVAL_DESC" />
+		<param name="speed" type="text" default="1000" label="SPEED" description="SPEED_DESC" />
+		<param name="transition" type="list" default="Sine.easeOut" label="FXTRANS" description="FXTRANS_DESC">
+			<option value="linear">linear</option>
+			<option value="Quad.easeOut">Quad.easeOut</option>
+			<option value="Quad.easeIn">Quad.easeIn</option>
+			<option value="Quad.easeINOut">Quad.easeINOut</option>
+			<option value="Cubic.easeOut">Cubic.easeOut</option>
+			<option value="Cubic.easeIn">Cubic.easeIn</option>
+			<option value="Cubic.easeINOut">Cubic.easeINOut</option>
+			<option value="Quart.easeOut">Quart.easeOut</option>
+			<option value="Quart.easeIn">Quart.easeIn</option>
+			<option value="Quart.easeINOut">Quart.easeINOut</option>
+			<option value="Quint.easeOut">Quint.easeOut</option>
+			<option value="Quint.easeIn">Quint.easeIn</option>
+			<option value="Quint.easeINOut">Quint.easeINOut</option>
+			<option value="Expo.easeOut">Expo.easeOut</option>
+			<option value="Expo.easeIn">Expo.easeIn</option>
+			<option value="Expo.easeINOut">Expo.easeINOut</option>
+			<option value="Circ.easeOut">Circ.easeOut</option>
+			<option value="Circ.easeIn">Circ.easeIn</option>
+			<option value="Circ.easeINOut">Circ.easeINOut</option>
+			<option value="Sine.easeOut">Sine.easeOut</option>
+			<option value="Sine.easeIn">Sine.easeIn</option>
+			<option value="Sine.easeINOut">Sine.easeINOut</option>
+			<option value="Back.easeOut">Back.easeOut</option>
+			<option value="Back.easeIn">Back.easeIn</option>
+			<option value="Back.easeINOut">Back.easeINOut</option>
+			<option value="Bounce.easeOut">Bounce.easeOut</option>
+			<option value="Bounce.easeIn">Bounce.easeIn</option>
+			<option value="Bounce.easeINOut">Bounce.easeINOut</option>
+			<option value="Elastic.easeOut">Elastic.easeOut</option>
+			<option value="Elastic.easeIn">Elastic.easeIn</option>
+			<option value="Elastic.easeINOut">Elastic.easeINOut</option>
+		</param>
+		<param type="asset" />	
+	</params>
+	<params group="advanced">
+		<param name="cache" type="hidden" default="0"/>
+		<param name="module_cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">NO caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>	
+</install>

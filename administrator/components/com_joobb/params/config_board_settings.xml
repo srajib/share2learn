@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="component">
+	<name>Board Configuration</name>
+	<author>Joo!BB Project</author>
+	<copyright>(C) 2007-2012 Joo!BB. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Parameters for individual Board Configuration</description>
+	<params addpath="/administrator/components/com_joobb/elements/">
+		<param name="board_name" type="text" size="50" default="" label="COM_JOOBB_BOARDNAME" description="COM_JOOBB_BOARDNAMEDESC" />
+		<param name="breadcrumb_index" type="text" size="50" default="" label="COM_JOOBB_BREADCRUMBINDEX" description="COM_JOOBB_BREADCRUMBINDEXDESC" />
+		<param name="description" type="textarea" cols="30" rows="5" default="" label="COM_JOOBB_DESCRIPTION" description="COM_JOOBB_DESCRIPTIONDESC" />
+		<param name="keywords" type="textarea" cols="30" rows="5" default="" label="COM_JOOBB_KEYWORDS" description="COM_JOOBB_KEYWORDSDESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="published" type="radio" default="1" label="COM_JOOBB_PUBLISHED" description="COM_JOOBB_BOARDSETTINGSPUBLISHEDDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="flood_interval" type="text" size="5" default="10" label="COM_JOOBB_FLOODINTERVAL" description="COM_JOOBB_FLOODINTERVALDESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="topics_per_page" type="text" size="5" default="10" label="COM_JOOBB_TOPICSPERPAGE" description="COM_JOOBB_TOPICSPERPAGEDESC" />
+		<param name="posts_per_page" type="text" size="5" default="10" label="COM_JOOBB_POSTSPERPAGE" description="COM_JOOBB_BOARDSETTINGSPOSTSPERPAGEDESC" />
+		<param name="search_results_per_page" type="text" size="5" default="10" label="COM_JOOBB_SEARCHRESULTSPERPAGE" description="COM_JOOBB_SEARCHRESULTSPERPAGEDESC" />
+		<param name="items_per_page" type="text" size="5" default="10" label="COM_JOOBB_ITEMSPERPAGE" description="COM_JOOBB_ITEMSPERPAGEDESC" />
+		<param name="breadcrumb_max_length" type="text" size="5" default="50" label="COM_JOOBB_BREADCRUMBMAXLENGTH" description="COM_JOOBB_BREADCRUMBMAXLENGTHDESC" />
+		<param name="guest_time" type="text" size="5" default="30" label="COM_JOOBB_GUESTTIME" description="COM_JOOBB_GUESTTIMEDESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="latest_items_count" type="text" size="50" default="5" label="COM_JOOBB_LATESTITEMSCOUNT" description="COM_JOOBB_LATESTITEMSCOUNTDESC" />
+		<param name="latest_items_type" type="list" size="50" default="0" label="COM_JOOBB_LATESTITEMSTYPE" description="COM_JOOBB_LATESTITEMSTYPEDESC">
+			<option value="0">COM_JOOBB_TOPICS</option>
+			<option value="1">COM_JOOBB_POSTS</option>
+		</param>
+		<param name="exclude_categories" type="joobbcategories" default="" label="COM_JOOBB_EXCLUDECATEGORIES" description="COM_JOOBB_EXCLUDECATEGORIESDESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="enable_bbcode" type="radio" default="1" label="COM_JOOBB_ENABLEBBCODE" description="COM_JOOBB_ENABLEBBCODEDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="enable_emotions" type="radio" default="1" label="COM_JOOBB_ENABLEEMOTIONS" description="COM_JOOBB_ENABLEEMOTIONSDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="auto_subscription" type="radio" default="0" label="COM_JOOBB_AUTOSUBSCRIPTION" description="COM_JOOBB_AUTOSUBSCRIPTIONDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="enable_guest_name" type="radio" default="1" label="COM_JOOBB_ENABLEGUESTNAME" description="COM_JOOBB_ENABLEGUESTNAMEDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="guest_name_required" type="radio" default="1" label="COM_JOOBB_GUESTNAMEREQUIRED" description="COM_JOOBB_GUESTNAMEREQUIREDDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="latest_members_count" type="text" size="50" default="3" label="COM_JOOBB_LATESTMEMBERSSCOUNT" description="COM_JOOBB_LATESTMEMBERSSCOUNTDESC" />
+	</params>
+</install>

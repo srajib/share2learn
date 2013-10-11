@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="component">
+	<name>Configuration Settings</name>
+	<author>Joo!BB Project</author>
+	<copyright>(C) 2007-2012 Joo!BB. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Configuration Settings</description>
+	<params addpath="/administrator/components/com_joocm/elements">
+		<param name="community_name" type="text" size="50" default="" label="COM_JOOCM_COMMUNITYNAME" description="COM_JOOCM_COMMUNITYNAMEDESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="time_zone" type="timezones" default="" label="COM_JOOCM_TIMEZONE" description="COM_JOOCM_CONFIGTIMEZONEDESC" />
+		<param name="time_format" type="joocmtimeformats" default="" label="COM_JOOCM_TIMEFORMAT" description="COM_JOOCM_CONFIGTIMEFORMATDESC" />
+		<param name="daylight_saving_time" type="radio" default="0" label="COM_JOOCM_DAYLIGHTSAVINGTIME" description="COM_JOOCM_DAYLIGHTSAVINGTIMEDESC">
+			<option value="0">COM_JOOCM_NO</option>
+			<option value="1">COM_JOOCM_YES</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="enable_avatars" type="radio" default="1" label="COM_JOOCM_ENABLEAVATARS" description="COM_JOOCM_ENABLEAVATARSDESC">
+			<option value="0">COM_JOOCM_NO</option>
+			<option value="1">COM_JOOCM_YES</option>
+		</param>
+		<param name="avatar_source" type="list" default="1" label="COM_JOOCM_AVATARSOURCE" description="COM_JOOCM_AVATARSOURCEDESC">
+			<option value="1">COM_JOOCM_JOOCM</option>
+			<option value="2">COM_JOOCM_COMMUNITYBUILDER</option>
+			<option value="3">COM_JOOCM_COMMUNITYBUILDEREXTENDED</option>
+			<option value="4">COM_JOOCM_IDOBLOG</option>
+			<option value="5">COM_JOOCM_JOMSOCIAL</option>
+			<option value="6">COM_JOOCM_K2</option>
+			<option value="7">COM_JOOCM_ALPHAUSERPOINTS</option>
+		</param>
+		<param name="enable_profiles" type="radio" default="1" label="COM_JOOCM_ENABLEPROFILES" description="COM_JOOCM_ENABLEPROFILESDESC">
+			<option value="0">COM_JOOCM_NO</option>
+			<option value="1">COM_JOOCM_YES</option>
+		</param>
+		<param name="force_edit_profile" type="radio" default="1" label="COM_JOOCM_FORCEEDITPROFILE" description="COM_JOOCM_FORCEEDITPROFILEDESC">
+			<option value="0">COM_JOOCM_NO</option>
+			<option value="1">COM_JOOCM_YES</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="enable_terms" type="radio" default="1" label="COM_JOOCM_ENABLETERMS" description="COM_JOOCM_ENABLETERMSDESC">
+			<option value="0">COM_JOOCM_NO</option>
+			<option value="1">COM_JOOCM_YES</option>
+		</param>
+		<param name="enable_root_pathway" type="radio" default="1" label="COM_JOOCM_ENABLEROOTPATHWAY" description="COM_JOOCM_ENABLEROOTPATHWAYDESC">
+			<option value="0">COM_JOOCM_NO</option>
+			<option value="1">COM_JOOCM_YES</option>
+		</param>
+		<param name="account_activation" type="radio" default="1" label="COM_JOOCM_ACCOUNTACTIVATION" description="COM_JOOCM_ACCOUNTACTIVATIONDESC">
+			<option value="0">COM_JOOCM_NONE</option>
+			<option value="1">COM_JOOCM_USER</option>
+			<option value="2">COM_JOOCM_ADMIN</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="allow_show_users" type="radio" default="1" label="COM_JOOCM_ALLOWSHOWUSERS" description="COM_JOOCM_ALLOWSHOWUSERSDESC">
+			<option value="0">COM_JOOCM_ALL</option>
+			<option value="1">COM_JOOCM_REGISTERED</option>
+		</param>
+		<param name="show_user_as" type="radio" default="0" label="COM_JOOCM_SHOWUSERAS" description="COM_JOOCM_SHOWUSERASDESC">
+			<option value="0">COM_JOOCM_USER</option>
+			<option value="1">COM_JOOCM_USERNAME</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="description" type="textarea" cols="30" rows="5" default="" label="COM_JOOCM_DESCRIPTION" description="COM_JOOCM_CONFIGDESCRIPTIONDESC" />
+		<param name="keywords" type="textarea" cols="30" rows="5" default="" label="COM_JOOCM_KEYWORDS" description="COM_JOOCM_KEYWORDSDESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="items_per_page" type="text" size="5" default="10" label="COM_JOOCM_ITEMSPERPAGE" description="COM_JOOCM_ITEMSPERPAGEDESC" />
+		<param name="users_main_page" type="text" size="3" default="5" label="COM_JOOCM_USERSATMAINPAGE" description="COM_JOOCM_USERSATMAINPAGEDESC" />
+	</params>
+</install>

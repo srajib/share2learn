@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="component">
+	<name>User Settings Defaults Configuration</name>
+	<author>Joo!BB Project</author>
+	<copyright>(C) 2007-2012 Joo!BB. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Parameters for default user settings on registration</description>
+	<params>
+		<param name="role" type="list" size="20" default="1" label="COM_JOOBB_ROLE" description="COM_JOOBB_USERSETTINGSDEFAULTSROLEDESC">
+			<option value="1">COM_JOOBB_REGISTERED</option>
+			<option value="2">COM_JOOBB_PRIVATE</option>
+			<option value="3">COM_JOOBB_MODERATOR</option>
+			<option value="4">COM_JOOBB_ADMINISTRATOR</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="enable_bbcode" type="radio" default="1" label="COM_JOOBB_ENABLEBBCODE" description="COM_JOOBB_ENABLEBBCODEDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="enable_emotions" type="radio" default="1" label="COM_JOOBB_ENABLEEMOTIONS" description="COM_JOOBB_ENABLEEMOTIONSDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="auto_subscription" type="radio" default="0" label="COM_JOOBB_AUTOSUBSCRIPTION" description="COM_JOOBB_AUTOSUBSCRIPTIONDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+	</params>
+</install>

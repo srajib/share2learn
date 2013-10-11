@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JOOCM_USERLISTLAYOUT">
+		<message>
+			<![CDATA[COM_JOOCM_USERLISTLAYOUTDESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JOOCM_USERLISTLAYOUT</name>
+		<description>COM_JOOCM_USERLISTLAYOUTDESC</description>
+		<params>
+		</params>
+	</state>
+</metadata>

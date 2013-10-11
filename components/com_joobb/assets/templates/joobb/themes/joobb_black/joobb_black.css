@@ -1,0 +1,408 @@
+/**
+ * @version $Id: joobb_black.css 68 2010-03-23 21:04:11Z sterob $
+ * @package Joo!BB
+ * @copyright Copyright (C) 2007-2010 Joo!BB Project. All rights reserved.
+ * @license GNU/GPL. Please see license.php in Joo!BB directory 
+ * for copyright notices and details.
+ * Joo!BB is free software. This version may have been NOT modified.
+ */
+
+.clr {clear: both;}
+
+/* Joo!BB */
+.jbJoobb {
+	background: #ffffff;
+	font-family: "Helvetica", "Verdana", "sans-serif";
+	color: #666666;
+}
+
+.jbBoxTop {
+	background: url(images/boxTop-.png) repeat-x;
+	width: 100%;
+	height: 25px;
+}
+
+.jbBoxTopLeft {
+	background: url(images/box-.png) 0 0 no-repeat;
+	height: 25px; 
+	padding-left: 5px;
+	background-color:#185CD9;
+}
+
+.jbBoxTopRight {
+	background: url(images/box-.png) 100% 0 no-repeat;
+	height: 25px; 
+	padding-right: 5px;
+}
+
+.jbBoxOuter {
+	width: 100%;
+}
+
+.jbBoxInner {
+	height: 100%; /* IE */
+	border-left: 1px solid #999793;
+	border-right: 1px solid #999793;
+}
+
+.jbBoxBottom {
+	background: url(images/boxBottom-.png) 0 0 repeat-x;
+	width: 100%;
+	height: 5px;
+}
+
+.jbBoxBottomLeft {
+	background: url(images/box-.png) 0 -25px no-repeat; 
+	padding-left: 5px;
+}
+
+.jbBoxBottomRight {
+	background: url(images/box-.png) 100% -25px no-repeat;
+	padding-right: 5px;
+}
+
+.jbTextHeader {
+	color: #fff;
+	margin-top: 5px;
+	text-shadow: #000 2px 2px 5px;
+	float: left;
+}
+
+a.jbTextHeader:link, a.jbTextHeader:visited {
+	margin: 0px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.jbTextHeader .highlight {
+  color: #666;
+}
+
+a.jbTextHeader:hover {
+	text-decoration: underline;
+}
+
+.jbPostHeader { }
+
+a.jbPostHeader:link, a.jbPostHeader:visited {
+	text-decoration: none;
+}
+a.jbPostHeader:hover { }
+
+p.jbPost { }
+
+.jbLabel {
+	background-color: #f6f6f6;
+	width: 25%;
+	padding: 5px;
+	text-align: right;
+	font-weight: bold;
+	border-bottom: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+	margin-bottom: 1px;
+	float: left;
+}
+.jbLabelInvisible {
+	width: 25%;
+	padding: 5px;
+	border-bottom: 1px solid transparent;
+	float: left;
+}
+.jbField {
+	width: auto;
+	margin-top: 2px; 
+	margin-left: 5px; 
+	float: left;
+}
+
+/* Bread Crumb */
+.jbBreadCrumbImageFirstLevel {
+	background: url(images/bcLevel1.png);
+	width: 15px;
+	height: 15px;
+	float: left;
+}
+.jbBreadCrumbImageSecondLevel {
+	background: url(images/bcLevel2.png);
+	width: 30px;
+	height: 15px;
+	float: left;
+}
+.jbBreadCrumbText {
+	margin-left: 5px;
+	float: left;
+}
+.jbBreadCrumbSeparator { 
+	margin-left: 3px;
+	float: left;
+} 
+
+.jbLeft { float: left; }
+.jbRight { float: right; }
+
+.jbMargin5 { margin: 5px; }
+.jbMarginTop5 { margin-top: 5px; }
+.jbMarginLeft5 { margin-left: 5px; }
+.jbMarginRight5 { margin-right: 5px; }
+.jbMargin10 { margin: 10px; }
+.jbMarginTop10 { margin-top: 10px; }
+.jbMarginBottom10 { margin-bottom: 10px; }
+.jbMarginRight10 { margin-right: 10px; }
+.jbPadding5 { padding: 5px; }
+.jbPaddingTop5 { padding-top: 5px; }
+.jbPaddingLeft5 { padding-left: 5px; }
+.jbPaddingRight5 { padding-right: 5px; }
+.jbPadding10 { padding: 10px; }
+.jbPaddingTop10 { padding-top: 10px; }
+.jbPaddingLeft10 { padding-left: 10px; }
+.jbPaddingRight10 { padding-right: 10px; }
+.jbPaddingRight20 { padding-right: 20px; }
+.jbPaddingLeft42 { padding-left: 42px; }
+.jbCenter { text-align: center; }
+
+.jbInputBox {
+	border: 1px inset #cccccc;
+	font-size: 15px;
+}
+
+.jbInputBoxSearch {
+	padding-left: 20px;
+	background: #ffffff url(images/iconSearch.png) no-repeat 5px center;
+	border: 1px solid #cccccc;
+	font-size: 13px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.jbCheckBox {
+	vertical-align: middle;
+	font-size: 11px;
+}
+
+.jbLegend {
+	font-size: 15px;
+	color: #9e9c98;
+	font-weight: normal;
+}
+
+.jbLegendSub {
+	font-size: 13px;
+	color: #9e9c98;
+	font-weight: normal;
+}
+
+.jbEditor {
+	border: 1px solid #cccccc;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.jbPagination { 
+	font-size: 12px; 
+	line-height: 12px;
+	float: right;
+}
+.jbPages { 
+	border: 1px solid #cccccc;
+	display: block;
+	margin-left: 5px;
+	padding: 5px;
+}
+.jbCounter {}
+.jbCounts {}
+
+.jbWidth5 { width: 5%; }
+.jbWidth10 { width: 10%; }
+.jbWidth15 { width: 15%; }
+.jbWidth20 { width: 20%; }
+.jbWidth23 { width: 23%; }
+.jbWidth25 { width: 25%; }
+.jbWidth30 { width: 30%; }
+.jbWidth55 { width: 55%; }
+.jbWidth60 { width: 60%; }
+.jbWidth65 { width: 65%; }
+.jbWidth70 { width: 70%; }
+.jbWidth75 { width: 75%; }
+.jbWidth80 { width: 80%; }
+.jbWidth90 { width: 90%; }
+.jbWidth95 { width: 95%; }
+.jbWidth100 { width: 100%; }
+.jbWidthAuto { width: auto; }
+
+.jbDisplayBlock { display: block; }
+.jbVerticalAlignTop { vertical-align: top; }
+
+.jbRow { height: 100%; }
+.jbCol { position: relative; float: left; }
+
+.jbBorderTop { border-top: 1px solid #999793; }
+.jbBorderBottom { border-bottom: 1px solid #dbdbdb; }
+.jbBorderRight { border-right: 1px solid #dbdbdb; }
+.jbBorderLeft { border-left: 1px solid #dbdbdb; }
+.jbBorderTopDeshed { border-top: 1px dashed #dbdbdb; }
+.jbBorderBottomDeshed { border-bottom: 1px dashed #dbdbdb; }
+.jbBorderRightDeshed { border-right: 1px dashed #dbdbdb; }
+.jbBorderLeftDeshed { border-left: 1px dashed #dbdbdb; }
+
+.jbFont11 { font-size: 11px; }
+.jbFont13 { font-size: 13px; }
+.jbFont17 { font-size: 17px; }
+
+.jbBold { font-weight: bold; }
+
+a.jbLink:link, a.jbLink:visited {
+	font-size: 15px;
+}
+a.jbLink:hover {
+	text-decoration: underline;
+}
+
+#jbForums li {
+	cursor: pointer;
+    list-style: none;
+}
+.jbForumSelected {
+	background-color:#c3d2e5;
+	border-top:2px solid #84a7db;
+	border-bottom:2px solid #84a7db;
+}
+
+.jbGuest { color: #333333; font-weight: bold; }
+.jbRegistered { color: #706400; }
+.jbPrivate { color: #00be59; }
+.jbModerator { color: #0028be; }
+.jbAdministrator { color: #700000; }
+
+.jbForumModerators {
+	font-size: 10px;
+}
+
+.jbMinMax {
+	margin-top: 2px; width: 18px; height: 18px; cursor: pointer;
+}
+
+.jbImageMin {
+	background: url(images/minimize.png) no-repeat;
+}
+.jbImageMax {
+	background: url(images/maximize.png) no-repeat;
+}
+
+.jbCursorPointer {
+	cursor: pointer;
+}
+.jbAvatarImage {
+	border: solid 9px #e3e3e3;
+}
+.jbFeedRSS {
+	background: url(images/feedRSS.png) no-repeat 0px center;
+	padding: 5px; padding-left: 25px; 
+}
+
+.jbAttachmentBox {
+	background-color: #f9f9f9;
+	margin: 5px 5px 5px 0;
+	padding: 5px;
+	min-width: 200px;
+	width: auto;
+	border: 1px dashed #dbdbdb;
+}
+
+.jbAttachmentList li { 
+	background-image: url(images/attachment.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: 0 50%;
+	padding-left: 20px;
+}
+
+/* Joo!BB IconList */
+.jbIconList {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+.jbIconList li {
+	cursor: pointer;
+    float: left;
+    list-style: none;
+    width: 33px;
+    height: 33px;
+}
+.jbIconSelected {
+	border-top: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-bottom: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+}
+
+.codetext {
+	font-weight: bold;
+}
+
+pre {
+	padding: 10px 15px;
+	margin: 5px 5px 15px 0;
+	border-left: 5px solid #999999;
+	background: #f6f6f6;
+	font: 1em/1.5 "Courier News", monospace;
+	white-space: pre-wrap;
+}
+
+.quotebyuser {
+	font-weight: bold;
+}
+
+.quote {
+	display: block;
+	padding: 10px;
+	font-style: italic;
+	background-color: #f1f1f1;
+	border-top: 1px solid #bfbfbf;
+	border-left: 1px solid #bfbfbf;
+}
+
+/* other stuff */
+fieldset {
+	margin: 0px;
+	margin-bottom: 10px;
+	border: 1px #ccc solid;
+	padding: 5px;
+	text-align: left;
+}
+fieldset p { margin: 10px 0px; }
+
+img { border: none; }
+
+#attachmentList {
+	width: 100%;
+	border: 1px solid #cccccc;
+	background: #efefef;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+#fileList {
+	list-style: none;
+	padding: 10px 5% 10px 5%;
+}
+
+#fileList li {
+	background: url('images/attachment.png') no-repeat;
+	padding-left: 20px;
+}
+
+/* form validation */
+.invalid { border-color: #ca0000; }
+label.invalid { color: #ca0000; }
+
+/* System Messages */
+.jbMessage { margin-bottom: 10px; padding: 5px; border: 1px dashed #ccc; font-size: 12px; font-weight: bold; text-indent: 30px; }
+.jbMessageHead { display: none; }
+.jbMessageInfo { line-height: 16px;color: #333;list-style: none; background: url(images/iconInfo.png) no-repeat; padding: 0; margin: 0; }
+.jbMessageError { line-height: 16px;color: #f00;list-style: none; background: url(images/iconError.png) no-repeat; padding: 0; margin: 0; }

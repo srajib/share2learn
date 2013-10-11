@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.0" type="module" method="upgrade">
+	<name>DisplayNews</name>
+	<author>BK</author>
+	<creationDate>2012-May</creationDate>
+	<copyright>(C) 2006 - 2011 BK. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>bkomraz1@gmail.com</authorEmail>
+	<authorUrl>http://joomla.rjews.net</authorUrl>
+	<version>1.7.4</version>
+	<description>Display News by BK Module</description>
+	<files>
+		<filename module="mod_dn">mod_dn.php</filename>
+		<filename module="mod_dn">helper.php</filename>
+		<filename module="mod_dn">index.html</filename>
+		<filename module="mod_dn">elements/index.html</filename>
+		<filename module="mod_dn">elements/categories.php</filename>
+		<filename module="mod_dn">elements/sections.php</filename>
+		<filename module="mod_dn">elements/slider.php</filename>		
+		<filename module="mod_dn">elements/access.php</filename>
+	</files>
+	<languages>
+		<!-- Any language files included with the module -->
+		<language tag="en-GB">en-GB.mod_dn.ini</language>
+	</languages>
+
+	<params addpath="/modules/mod_dn/elements" >
+		<param name="show_title_auto" type="radio" default="0"
+			label="Module Title auto"
+			description="MODULE TITLE AUTO DESCR">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="set_count" type="text" default="5" label="Count"
+			description="SET_COUNT_DESCR" />
+		<param name="minus_leading" type="text" default="" label="Minus leading"
+			description="MINUS LEADING DESCR" />
+		<param name="set_column" type="text" default="1" label="Columns"
+			description="SET_COLUMN_DESCR" />
+		<param name="ordering" type="list" default="mostrecent" label="Order"
+			description="Article Order">
+			<option value="mostrecent">Most recent first</option>
+			<option value="mostold">Oldest first</option>
+			<option value="recentlymodified">Recently modified first</option>
+			<option value="mostread">Most Hits</option>
+			<option value="ordering">Order</option>
+			<option value="frontpageordering">Front page order</option>
+			<option value="title">Title alphabetical</option>
+			<option value="random">Random</option>
+			<option value="rating">Most rated first</option>
+			<option value="voting">Most voted first</option>
+			<option value="publish_down">Nearest expiring first</option>
+			<option value="mostjcommented">Most commented first</option>
+			<option value="recentjcommented">Recently commented first</option>
+			<option value="set_articles">Set articles</option>
+		</param>
+		<param name="style" type="list" default="vert" label="Layout"
+			description="STYLE DESCR">
+			<option value="flat">Flat</option>
+			<option value="flatarrow">Flat Arrow</option>
+			<option value="flatlist">Flat List</option>
+			<option value="vert">Table Vertical</option>
+			<option value="horiz">Table Horizontal</option>
+		</param>
+		<param name="css_type" type="list" default="content" label="Style"
+			description="CSS_DESCR">
+			<option value="content">Content</option>
+			<option value="table">Table</option>
+			<option value="latestnews">Latestnews</option>
+			<option value="dedicated">Dedicated</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default=""
+			label="Module Class Suffix"
+			description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="show_tooltips" type="list" default="0" label="Link tooltip"
+			description="LINK TOOLTIP TITLE DESCR">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label=""
+			description="" />
+		<param name="use_modify_date" type="list" default="0"
+			label="Date type"
+			description="USE_MODIFY_DATE">
+			<option value="0">Creation</option>
+			<option value="1">Modifing</option>
+			<option value="3">Expiration</option>
+		</param>
+		<param type="slider" default="Content Selection Parameters" />
+		<param name="set_date_today" type="radio" default="0"
+			label="Set date today" description="SET_DATE_TODAY_DESCR">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="set_date_range" type="text" default=""
+			label="Set date range"
+			description="SET_DATE_RANGE_DESCR" />
+		<param name="set_date_month" type="list" default=""
+			label="Set month"
+			description="SET DATE MONTH DESCR">
+			<option value=""></option>
+			<option value="0">current</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</param>
+		<param name="set_date_year" type="text" default="" label="Set year"
+			description="SET DATE YEAR DESCR" />
+		<param name="set_section_exclude" type="list" default=""
+			label="Set section type"
+			description="SET SECTION TYPE" >
+			<option value="">only selected</option>
+			<option value="1">all except selected</option>
+		</param>
+		<param name="set_section_id" type="sections" default=""
+			label="Set section"
+			description="SET SECTION DESCR" />
+		<param name="set_section_id_extra" type="text" default=""
+			label="Additional sections"
+			description="ADDITIONAL SECTIONS DESCR" />
+		<param name="set_category_exclude" type="list" default=""
+			label="Set category type"
+			description="SET CATEGORY TYPE" >
+			<option value="0">only selected</option>
+			<option value="1">all except selected</option>
+		</param>
+		<param name="set_category_id" type="categories" default=""
+			label="Set category"
+			description="SET CATEGORY DESCR" />
+		<param name="set_category_id_extra" type="text" default=""
+			label="Additional categorys"
+			description="ADDITIONAL CATEGORYS DESCR" />
+		<param name="set_auto" type="radio" default="0"
+			label="Set auto section/category"
+			description="SET AUTO SECTION CATEGORY DESCR">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="set_article_id" type="text" default=""
+			label="Set articles" description="SET_ARTICLES_DESCR" />
+		<param name="set_author_id" type="text" default="" label="Set author ID"
+			description="SET AUTHOR ID DESCR" />
+		<param name="set_author_name" type="text" default=""
+			label="Set author name"
+			description="SET AUTHOR NAME DESCR" />
+		<param name="set_auto_author" type="list" default="0"
+			label="Set auto author"
+			description="
+			SET AUTO AUTHOR DESCR">
+			<option value="0">No</option>
+			<option value="1">by article author</option>
+			<option value="2">by article title</option>
+			<option value="3">by current (registered) user</option>
+		</param>
+		<param name="set_related" type="list" default="0"
+			label="Set related"
+			description="Articles that are related to the one currently being viewed. These relations are established by the Meta Keywords. ">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+		<param name="set_metakeys" type="text" default=""
+			label="Set Meta Keywords"
+			description='All specified keywords are searched against all the keywords of all other published Articles. For example, you may have an Article on "Breeding Parrots" and another on "Hand Raising Black Cockatoos". If you include the keyword "parrot" in both Articles, then the Related Items Module will list the "Breeding Parrots" Article when viewing "Hand Raising Black Cockatoos" and vice-versa. ' />
+		<param name="show_frontpage" type="list" default="y"
+			label="Frontpage items" description="FRONTPAGE_ITEMS_DESCR">
+			<option value="n">Hide</option>
+			<option value="y">Show</option>
+			<option value="only">Only</option>
+		</param>
+		<param name="hide_current" type="radio" default="0"
+			label="Hide content item" description="HIDE CONTENT ITEM DESCR">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="access" type="access" default=""
+			label="Set access"
+			description="Set articles access level" />
+		<param name="set_state" type="list" default="0"
+			label="Archived items" description="">
+			<option value="1">Hide</option>
+			<option value="-1">Only</option>
+			<option value="1,-1">Show</option>
+		</param>
+		<param type="slider" default="Title Parameters" />
+		<param name="show_title" type="list" default="" label="Show Article Title"
+			description="SHOW ARTICLE TITLE DESCR">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+			<option value="">Use Global</option>
+		</param>
+		<param name="link_titles" type="list" default="" label="Title Linkable"
+			description="TITLE LINKABLE DESCR">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="">Use Global</option>
+		</param>
+		<param name="text_hover_title" type="text" default=""
+			label="Title tooltip prefix"
+			description="TOOLTIP TITLE DESCR" />
+		<param name="filter_title" type="list" default="0"
+			label="Filter and limit title"
+			description="FILTER AND LIMIT TITLE DESCR">
+			<option value="0">No</option>
+			<option value="1">By chars Exactly</option>
+			<option value="2">By chars Don't cut mid-word</option>
+			<option value="3">By delimiter</option>
+		</param>
+		<param name="length_limit_title" type="text" default="20"
+			label="Length limit title"
+			description="LENGTH LIMIT TITLE DESCR" />
+		<param name="limit_title_delimiter" type="text" default=""
+			label="Delimiter"
+			description="The boundary string" />		
+	<param name="limit_title_sign" type="text" default="" label="Limited title sign"
+			description="Limited title sign"/>
+		<param type="slider" default="Text Parameters" />
+		<param name="show_text" type="list" default="1" label="Text"
+			description="SHOW CONTENT TEXT DESCR">
+			<option value="0">Hide</option>
+			<option value="1">Intro only</option>
+			<option value="2">Full text</option>
+		</param>
+		<param name="link_text" type="list" default="0" label="Text Linkable"
+			description="TEXT LINKABLE DESCR">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="filter_text" type="list" default="0"
+			label="Text format"
+			description="FORMAT TEXT DESCR">
+			<option value="0">Preserve</option>
+			<option value="1">Cleanup</option>
+		</param>
+		<param name="preserve_tags" type="text" default="&lt;img&gt;" label="Don't cleanup"
+			description="PRESERVE TAGS DESCRIPTION">
+		</param>
+		<param name="limit_text" type="list" default="0"
+			label="Limit text"
+			description="LIMIT TEXT DESCR">
+			<option value="0">No</option>
+			<option value="1">Exactly</option>
+			<option value="2">Don't cut mid-word</option>
+		</param>
+		<param name="length_limit_text" type="text" default="100"
+			label="Limit text length"
+			description="LIMIT TEXT LENGTH DESCR" />
+		<param name="text_hover_text" type="text" default=""
+			label="Text tooltip prefix"
+			description="TOOLTIP TEXT DESCR" />
+		<param type="slider" default="Image Parameters" />
+		<param name="image" type="list" default="1" label="Show images (require intro or full text enabled)"
+			description="SHOW IMAGES DESCR">
+			<option value="0">No</option>
+			<option value="1">Yes </option>
+			<option value="2">Separately</option>
+		</param>
+		<param name="link_image" type="list" default="0" label="Images Linkable"
+			description="IMAGES LINKABLE DESCR">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="image_num" type="text" default="" label="Number of images"
+			description="Number of images. Empty field - all">
+		</param>
+		<param name="image_scale" type="list" default="bestfit" label="Image resizing (for thumbs require multithumb installed)"
+			description="IMAGE SCALING DESCR">
+			<option value="0">No</option>
+			<option value="scale">Scale (keep proportions)</option>
+			<option value="bestfit">Thumb - keep proportions</option>
+			<option value="crop">Thumb - crop to fit (cut one side)</option>
+			<!-- <option value="cut">Thumb - cut to fit (cut both sides)</option> -->
+            <option value="fill">Thumb - fill out with background color</option>
+            <option value="transparent">Thumb - Fill out with transparent color (GIF and PNG)</option>
+		</param>
+		<param name="image_bg" type="text" default="FFFFFF" label="Background/Transparent color" 
+			description="Background/Transparent color of thumbnail if &lt;b&gt;Handle proportions&lt;/b&gt; is set to fill out with background/transparent." />
+		<param name="image_type" type="list" default="" label="Image type"
+			description="Image type of generated images">
+			<option value="">preserve</option>
+			<option value="png">PNG</option>
+			<option value="gif">GIF</option>
+			<option value="jpeg">JPEG</option>
+		</param>
+		<param name="image_width" type="text" default="" label="Image width (px)"
+			description="Image width">
+		</param>
+		<param name="image_height" type="text" default="" label="Image height (px)"
+			description="Image height">
+		</param>
+		<param name="image_size" type="text" default="" label="Image size (deprecated)"
+			description="Image size f.e: 100x150 100 x150 0x150">
+		</param>
+		<param name="image_align" type="list" default="0" label="Image alignment"
+			description="IMAGE ALIGNMENT DESCR">
+			<option value="0">Preserve</option>
+			<option value="1">No</option>
+			<option value="2">Left</option>
+			<option value="3">Right</option>
+			<option value="4">Middle</option>
+			<option value="5">Top</option>
+			<option value="6">Bottom</option>
+			<option value="7">Left/Right</option>
+			<option value="8">Right/Left</option>
+		</param>
+		<param name="image_margin" type="text" default="" label="Image margins"
+			description="IMAGE MARGIN DESCR">
+		</param>
+		<param name="image_class" type="list" default="0" label="Image class"
+			description="IMAGE CLASS">
+			<option value="0">Preserve</option>
+			<option value="1">Remove</option>
+			<option value="2">Replace</option>
+			<option value="3">Add</option>
+		</param>
+		<param name="image_class_name" type="text" default="" label="Image class name"
+			description="IMAGE CLASS NAME">
+		</param>
+		<param name="image_default" type="list" default="0" label="Default image" 
+			description="" >
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+		<param name="image_default_file" type="text" default="" label="Default image" 
+			description="Path to default image file or URL" />
+		<param type="slider" default="Section/Category parameters" />
+		<param name="show_section" type="list" default="" label="Section Name"
+			description="SECTION NAME DESCR">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+			<option value="">Use Global</option>
+		</param>
+		<param name="link_section" type="list" default=""
+			label="Section Linkable"
+			description="SECTION LINKABLE DESCR">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+			<option value="">Use Global</option>
+		</param>
+		<param name="text_hover_section" type="text" default=""
+			label="Section tooltip prefix"
+			description="SECTION TOOLTIP PREFIX DESCR" />
+		<param name="show_category" type="list" default="" label="Category Name"
+			description="CATEGORY NAME DESCR">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+			<option value="">Use Global</option>
+		</param>
+		<param name="link_category" type="list" default=""
+			label="Category Linkable"
+			description="CATEGORY LINKABLE DESCR">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+			<option value="">Use Global</option>
+		</param>
+		<param name="text_hover_category" type="text" default=""
+			label="Category tooltip  prefix"
+			description="CATEGORY TOOLTIP PREFIX DESCR" />
+		<param name="show_more_auto" type="list" default="0"
+			label="Show more section/category auto"
+			description="SHOW MORE SECTION CATEGORY AUTO DESCR">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			
+		</param>
+		<param name="text_more" type="text" default="" label="Text more"
+			description="TEXT MORE DESCR" />
+		<param name="text_hover_more_section" type="text" default=""
+			label="Tooltip prefix of more from section"
+			description="TOOLTIP MORE FROM SECTION DESCR" />
+		<param name="text_hover_more_category" type="text" default=""
+			label="Tooltip prefix of more from category" description="View more from Category" />
+		<param type="slider" default="Date/Author/Read More/Rating/Hits/Jcomment parameters" />
+		<param name="show_date" type="list" default="" label="Date"
+			description="SHOW DATE DESCR">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+			<option value="2">Auto</option>
+			<option value="">Use Global</option>
+		</param>
+		<param name="format_date" type="text" default="" label="Date format"
+			description="DATE FORMAT DESCR" />
+		<param name="show_author" type="list" default="" label="Show Author"
+			description="SHOW AUTHOR DESCRShow/Hide article author.">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+			<option value="2">Auto</option>
+			<option value="">Use Global</option>
+		</param>
+		<param name="show_readmore" type="list" default="2" label="Read More"
+			description="SHOW READ MORE DESCR">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+			<option value="2">Auto</option>
+		</param>
+		<param name="text_readmore" type="text" default="" label="Text readmore"
+			description="TEXT READMORE DESCR" />
+		<param name="text_hover_readmore" type="text" default=""
+			label="Tooltip prefix readmore"
+			description="TOOLTIP READMORE DESCR" />
+		<param name="show_vote" type="list" default="" label="Show Rate"
+			description="SHOW RATE DESCR">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+			<option value="">Use Global</option>
+		</param>
+		<param name="show_hits" type="list" default="" label="Show Hits"
+			description="SHOW AUTHOR DESCR">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+			<option value="">Use Global</option>
+		</param>
+		<param name="show_jcomment_counter" type="list" default="0" label="Jcomments number"
+			description="">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param type="slider" default="Bottom Link Parameters" />
+		<param name="bottom_link_text" type="text" default=""
+			label="Bottom link title" description="BOTTOM LINK TITLE DESCR" />
+		<param name="bottom_link_url" type="text" default=""
+			label="Bottom link url"
+			description="BOTTOM LINK URL DESCR" />
+		<param name="text_module_description" type="text" default=""
+			label="Text module desciption" description="TEXT MODULE DESCIPTION DESCR" />
+		<param type="slider" default="Scroll Parameters" />
+		<param name="scroll_direction" type="list" default="no" label="Scroll"
+			description="SCROLL DESCR">
+			<option value="no">No</option>
+			<option value="up">Up</option>
+			<option value="down">Down</option>
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+			<!-- <option value="paging">Paging</option> -->
+		</param>
+		<param name="scroll_speed" type="list" default="1" label="Scroll speed"
+			description="SCROLL SPEED DESCR">
+			<option value="0">none</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</param>
+		<param name="scroll_delay" type="text" default="30" label="Scroll delay"
+			description="The delay in displaying/refreshing the scrolling data in milliseconds.  The lower the number the quicker the speed." />
+		<param name="scroll_mouse_ctrl" type="list" default="1"
+			label="Pause on mouse over" description="SCROLLING CONTROL DESCR">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="scroll_height" type="text" default="100" label="Scroll height"
+			description="SCROLL HEIGHT DESCR" />
+		<param type="slider" default="Popup Window Parameters" />
+		<param name="link_type" type="list" default="0"
+			label="Pop-up window" description="">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+		<param name="link_target" type="text" default=""
+			label="Link Target" description="controls where the new document will be displayed when the user follows a link"/>
+		<param name="window_width"       type="text" default="" label="Window Width" description="specifies width of the new window in pixels"/>
+   		<param name="window_height"      type="text" default="" label="Window Height" description="height of the window in pixels"/> 
+   		<param name="window_menubar"     type="list" default="0" label="Menu bar" description="Specifies whether to display the browser menu bar">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+   		<param name="window_directories" type="list" default="0" label="Link bar" description="Specifies whether to display the browser directory buttons. (Links bar)">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+   		<param name="window_location"    type="list" default="0" label="Address Line" description="Specifies whether to display the address line in the new window.">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+   		<param name="window_resizable"   type="list" default="0"  label="Resizable" description="Specifies whether the new window is resizable.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+   		<param name="window_scrollbars"  type="list" default="0"  label="Scrollbars" description="Specifies whether the new window should have scrollbars.">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+   		<param name="window_status"      type="list" default="0" label="Status bar" description="Specifies whether to display the browser status bar.">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+   		<param name="window_toolbar"     type="list" default="0"  label="Toolbar" description="Specifies whether to display the toolbar in the new window
+">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param type="slider" default="Item Id parameters"  />
+		<param name="item_id_type" type="list" default="0"
+			label="Item Id overwrite"
+			description="">
+			<option value="0">never</option>
+			<option value="1">If itemId not found</option>
+			<option value="2">Always</option>
+		</param>
+		<param name="item_id" type="menuitem" default="0" size="10"
+			label="Item Id"
+			description="">
+		</param>
+		<param type="slider" default="Template parameters"  />
+		<param name="module_template" type="textarea" rows="12" cols="50"
+			default="( $rows_out &lt;&gt; '' ? 
+($mod_title_out &lt;&gt; '' ? &quot;$mod_title_out&quot; : '').
+($mod_descr_out &lt;&gt; '' ? &quot;$mod_descr_out&quot; : '' ).
+$mod_start_out.
+$rows_out.
+$mod_end_out.
+($mod_automore_out &lt;&gt; '' ? $mod_automore_out :'' ) 
+: '' )" label="Module template"
+			description="MODULE TEMPLATE DESCR" />
+			
+		<param name="use_rows_template" type="radio" default="1"
+			label="Row template type"
+			description="ROW TEMPLATE TYPE DESCR">
+			<option value="0">Static</option>
+			<option value="1">Dynamic</option>
+		</param>
+		<param name="format" type="textarea" rows="6" cols="50"
+			default="%t &lt;br/&gt;%s - %c&lt;br/&gt;%a - %d&lt;br/&gt;%b&lt;br/&gt;%p%i&lt;br/&gt;%m&lt;span class=&quot;article_separator&quot;&gt; &lt;/span&gt;" label="Static row template"
+			description="STATIC ROW TEMPLATE DESCR" />
+		<param name="row_template" type="textarea" rows="20" cols="50"
+			default="($title_out&lt;&gt;'' ? &quot;$title_out&quot; : ''). 
+($title_out&lt;&gt;'' &amp;&amp; $css_type &lt;&gt; 'content' ? &quot;&lt;br/&gt;&quot; : '').
+($rate_out&lt;&gt;'' ? &quot;$rate_out&quot; : ''). 
+($sec_out&lt;&gt;'' ? &quot;$sec_out&quot; : ''). 
+($sec_out&lt;&gt;'' &amp;&amp; $cat_out&lt;&gt;'' ? ' - ' : ''). 
+($cat_out&lt;&gt;'' ? &quot;$cat_out&quot; : ''). 
+($sec_out.$cat_out&lt;&gt;'' ? '&lt;br/&gt;' : ''). 
+($author_out&lt;&gt;'' ? &quot;$author_out&quot; : ''). 
+($author_out&lt;&gt;'' &amp;&amp; $date_out&lt;&gt;'' ? ' - ' : ''). 
+($date_out&lt;&gt;'' ? &quot;$date_out&quot; : ''). 
+($author_out.$date_out&lt;&gt;'' ? '&lt;br/&gt;' : ''). 
+($before_out&lt;&gt;'' ? &quot;$before_out&lt;br/&gt;&quot; : ''). 
+($img_out&lt;&gt;'' ? &quot;$img_out&quot; : ''). 
+($text_out&lt;&gt;'' ? &quot;$text_out&quot; : ''). 
+($hits_out&lt;&gt;'' ? &quot;($hits_out)&quot; : ''). 
+($jcomments_out&lt;&gt;'' ? &quot;($jcomments_out)&quot; : ''). 
+($readmore_out&lt;&gt;'' ? &quot;&lt;br/&gt;$readmore_out&quot; : ''). 
+(!$last ? '&lt;span class=&quot;article_separator&quot;&gt; &lt;/span&gt;' : '')"
+			label="Dynamic row template"
+			description="ROW_TEMPLATE_DESCR" />
+			
+		<param type="slider" default="Integration parameters" />
+<!--		<param name="plugins" type="pluginlist" label="Specific content plugins only" description="Enable this option if you want to trigger content plugins (onPrepareContent). Keep in mind not every plugin will work outside com_content." /> -->
+		<param name="plugins_disable" type="list" default="1"
+			label="Prepare Content plugins"
+			description="CONTENT PLUGINS DESCR">
+			<option value="0">Enable</option>
+			<option value="1">Disable</option>
+		</param>
+		<param name="before_display_content_plugins" type="list" default="0"
+			label="Before Display Content plugins"
+			description="BEFORE DISPLAY CONTENT PLUGINS DESCR">
+			<option value="1">Enable</option>
+			<option value="0">Disable</option>
+		</param>
+		<param name="force_builtin_rating" type="list" default="0"
+			label="Force internal rating"
+			description="Force to use module internal system also in the case of enabling &amp;Before Display Content plugins&amp; ">
+			<option value="1">Enable</option>
+			<option value="0">Disable</option>
+		</param>
+		<param name="rating_txt" type="text" default="" label="Rating text"
+			description="" />
+		<param name="jcomments" type="list" default="0"
+			label="JComments integration"
+			description="">
+			<option value="1">Enable</option>
+			<option value="0">Disable</option>
+		</param>
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching"
+			description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time"
+			description="The time before the module is recached" />
+		
+	</params>
+</install>

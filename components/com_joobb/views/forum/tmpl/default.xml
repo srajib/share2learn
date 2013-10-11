@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JOOBB_FORUMLAYOUT">
+		<message>
+			<![CDATA[COM_JOOBB_FORUMLAYOUTDESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JOOBB_FORUMLAYOUT</name>
+		<description>COM_JOOBB_FORUMLAYOUTDESC</description>
+		<url addpath="/administrator/components/com_joobb/elements">
+			<param name="forum" type="joobbforum" default="0" label="COM_JOOBB_SELECTFORUM" description="COM_JOOBB_SELECTFORUMDESC" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

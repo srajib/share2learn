@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="component">
+	<name>Captcha Settings</name>
+	<author>Joo!BB Project</author>
+	<copyright>(C) 2007-2012 Joo!BB. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Parameters for individual Captcha Configuration</description>
+	<params>
+		<param name="character_set" type="text" size="80" default="abcdefghjkmnpqrstuvwxyz23456789" label="COM_JOOCM_CHARACTERSET" description="COM_JOOCM_CHARACTERSETDESC" />
+		<param name="character_count" type="text" size="3" default="4" label="COM_JOOCM_CHARACTERCOUNT" description="COM_JOOCM_CHARACTERCOUNTDESC" />
+		<param name="font_size_range" type="text" size="5" default="25:30" label="COM_JOOCM_FONTSIZERANGE" description="COM_JOOCM_FONTSIZERANGEDESC" />
+		<param name="font_color" type="text" size="7" default="7d7d7d" label="COM_JOOCM_FONTCOLOR" description="COM_JOOCM_FONTCOLORDESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="captcha_login" type="radio" default="1" label="COM_JOOCM_CAPTCHALOGIN" description="COM_JOOCM_CAPTCHALOGINDESC">
+			<option value="0">COM_JOOCM_NO</option>
+			<option value="1">COM_JOOCM_YES</option>
+		</param>
+		<param name="captcha_register" type="radio" default="1" label="COM_JOOCM_CAPTCHAREGISTER" description="COM_JOOCM_CAPTCHAREGISTERDESC">
+			<option value="0">COM_JOOCM_NO</option>
+			<option value="1">COM_JOOCM_YES</option>
+		</param>
+		<param name="captcha_requestlogin" type="radio" default="1" label="COM_JOOCM_CAPTCHAREQUESTLOGIN" description="COM_JOOCM_CAPTCHAREQUESTLOGINDESC">
+			<option value="0">COM_JOOCM_NO</option>
+			<option value="1">COM_JOOCM_YES</option>
+		</param>
+	</params>
+</install>

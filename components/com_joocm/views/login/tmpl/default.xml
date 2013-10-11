@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JOOCM_LOGINLAYOUT">
+		<message>
+			<![CDATA[COM_JOOCM_LOGINLAYOUTDESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JOOCM_LOGINLAYOUT</name>
+		<description>COM_JOOCM_LOGINLAYOUTDESC</description>
+	</state>
+</metadata>

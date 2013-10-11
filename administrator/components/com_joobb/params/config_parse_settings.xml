@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="component">
+	<name>Parse Configuration</name>
+	<author>Joo!BB Project</author>
+	<copyright>(C) 2007-2012 Joo!BB. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Parameters for individual Parse Configuration</description>
+	<params addpath="/administrator/components/com_joobb/elements">
+		<param name="@joobbheader" type="joobbheader" default="COM_JOOBB_TAGSETTINGSCODE" />
+		<param name="enable_line_numbers" type="list" size="50" default="0" label="COM_JOOBB_ENABLELINENUMBERS" description="COM_JOOBB_ENABLELINENUMBERSDESC">
+			<option value="0">COM_JOOBB_NOLINENUMBERS</option>
+			<option value="1">COM_JOOBB_NORMALLINENUBMERS</option>
+			<option value="2">COM_JOOBB_FANCYLINENUMBERS</option>
+		</param>
+		<param name="link_target" type="text" size="10" default="_blank" label="COM_JOOBB_LINKTARGET" description="COM_JOOBB_LINKTARGETDESC" />
+		<param name="@joobbheader" type="joobbheader" default="COM_JOOBB_TAGSETTINGSIMAGE" />
+		<param name="image_max_width" type="text" size="5" default="500" label="COM_JOOBB_WIDTH" description="COM_JOOBB_IMAGEWIDTHDESC" />
+		<param name="image_max_height" type="text" size="5" default="375" label="COM_JOOBB_HEIGHT" description="COM_JOOBB_IMAGEHEIGHTDESC" />
+		<param name="@joobbheader" type="joobbheader" default="COM_JOOBB_TAGSETTINGSYOUTUBE" />
+		<param name="youtube_width" type="text" size="5" default="425" label="COM_JOOBB_WIDTH" description="COM_JOOBB_YOUTUBEWIDTHDESC" />
+		<param name="youtube_height" type="text" size="5" default="344" label="COM_JOOBB_HEIGHT" description="COM_JOOBB_YOUTUBEHEIGHTDESC" />
+		<param name="youtube_allow_fullscreen" type="radio" default="1" label="COM_JOOBB_ALLOWFULLSCREEN" description="COM_JOOBB_YOUTUBEALLOWFULLSCREENDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="@joobbheader" type="joobbheader" default="COM_JOOBB_TAGSETTINGSGVIDEO" />
+		<param name="gvideo_width" type="text" size="5" default="425" label="COM_JOOBB_WIDTH" description="COM_JOOBB_GVIDEOWIDTHDESC" />
+		<param name="gvideo_height" type="text" size="5" default="344" label="COM_JOOBB_HEIGHT" description="COM_JOOBB_GVIDEOHEIGHTDESC" />
+	</params>
+</install>

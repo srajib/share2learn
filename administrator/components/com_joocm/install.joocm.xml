@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5" method="upgrade">
+	<name>Joo!CM</name>
+	<author>Joo!BB Project</author>
+	<creationDate>March 2012</creationDate>
+	<copyright>(C) 2007-2012 Joo!BB Project. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0 Phobos Stable</version>
+	<description>Joo!CM - Joomla Community Manager</description>
+	<administration>
+		<menu img="components/com_joocm/images/menu/icon-16-joocm.png">Joo!CM</menu>
+		<files><filename>install.joocm.xml</filename></files>
+		<files folder="administrator/components/com_joocm">
+			<folder>controllers</folder>
+			<folder>css</folder>
+			<folder>elements</folder>
+			<folder>images</folder>
+			<folder>params</folder>
+			<folder>tables</folder>
+			<folder>updates</folder>
+			<folder>views</folder>
+			<filename>admin.joocm.php</filename>
+			<filename>changelog.php</filename>
+			<filename>copyright.php</filename>
+			<filename>index.html</filename>
+			<filename>install.joocm.php</filename>
+			<filename>install.joocm.sql</filename>
+			<filename>license.php</filename>
+			<filename>toolbar.joocm.php</filename>
+			<filename>toolbar.joocm.html.php</filename>
+			<filename>uninstall.joocm.php</filename>
+			<filename>uninstall.joocm.sql</filename>
+		</files>
+		<languages folder="administrator/language">
+			<language tag="en-GB">en-GB/en-GB.com_joocm.ini</language>
+		</languages>
+	</administration>
+	<files folder="components/com_joocm">
+		<folder>assets</folder>
+		<folder>controller</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>system</folder>
+		<folder>views</folder>
+		<filename>include.php</filename>
+		<filename>index.html</filename>
+		<filename>joocm.php</filename>
+		<filename>router.php</filename>
+	</files>	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.com_joocm.ini</language>
+	</languages>
+	<media folder="media/joocm/avatars" destination="joocm/avatars">
+		<folder>standard</folder>
+		<filename>index.html</filename>
+	</media>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.joocm.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Custom Install Script to execute -->
+	<installfile>install.joocm.php</installfile>
+
+	<!-- Custom Uninstall Script to execute -->
+	<uninstallfile>uninstall.joocm.php</uninstallfile>
+	
+	<!-- Custom removal of no more needed files -->
+	<remove component="com_joocm">
+		<admin>
+		    <!-- Added in 1.0.0 Phobos RC1 -->
+			<file>images\icon-48-avatar.png</file>
+			<file>images\icon-48-details.png</file>
+			<file>images\icon-48-joocmuser.png</file>
+			<file>images\icon-48-avatar.png</file>
+			<file>images\icon-48-details.png</file>
+			<file>images\icon-48-joocmuser.png</file>
+			<file>images\icon-48-login.png</file>
+			<file>images\icon-48-logout.png</file>
+			<file>images\icon-48-messages.png</file>
+			<file>images\icon-48-profilefield.png</file>
+			<file>images\icon-48-register.png</file>
+			<file>images\icon-48-settings.png</file>
+			<file>images\icon-48-terms.png</file>
+			<file>images\icon-48-whosonline.png</file>
+			<file>images\imageNext.png</file>
+			<file>images\imagePrev.png</file>
+			<file>images\install\install.png</file>
+			<file>images\install\update.png</file>
+			<file>updates\update_091.joocm.sql</file>
+			<file>views\avatar</file>
+			<file>views\editaccount</file>
+			<file>views\editprofile</file>
+			<file>views\editsettings</file>
+			<file>views\information</file>
+			<file>views\login</file>
+			<file>views\main</file>
+			<file>views\profile</file>
+			<file>views\register</file>
+			<file>views\requestlogin</file>
+			<file>views\resetlogin</file>
+			<file>views\terms</file>
+			<file>views\userlist</file>
+			<file>views\whosonline</file>
+			
+			<!-- Added in 1.0.0 Phobos RC5 -->
+			<file>updates\update.sql</file>
+			<file>updates\update_0.9.1.joocm.sql</file>
+		</admin>
+		<site>
+		    <!-- Added in 1.0.0 Phobos RC1 -->
+			<file>captchas</file>
+			<file>images</file>
+			<file>js</file>
+			<file>styles</file>
+			<file>models\whosonline.php</file>
+			<file>views\avatar\tmpl\joocm.php</file>
+			<file>views\avatar\tmpl\joocm.xml</file>
+			<file>views\avatar\tmpl\joocm_avatar.php</file>
+			<file>views\editaccount\tmpl\joocm.php</file>
+			<file>views\editaccount\tmpl\joocm.xml</file>
+			<file>views\editaccount\tmpl\joocm_editaccount.php</file>
+			<file>views\editprofile\tmpl\joocm.php</file>
+			<file>views\editprofile\tmpl\joocm.xml</file>
+			<file>views\editprofile\tmpl\joocm_editprofile.php</file>
+			<file>views\editsettings\tmpl\joocm.php</file>
+			<file>views\editsettings\tmpl\joocm.xml</file>
+			<file>views\editsettings\tmpl\joocm_editsettings.php</file>
+			<file>views\information\tmpl\joocm.php</file>
+			<file>views\information\tmpl\joocm.xml</file>
+			<file>views\information\tmpl\joocm_account_activated.php</file>
+			<file>views\information\tmpl\joocm_account_activation_admin.php</file>
+			<file>views\information\tmpl\joocm_account_activation_failed.php</file>
+			<file>views\information\tmpl\joocm_account_activation_no.php</file>
+			<file>views\information\tmpl\joocm_account_activation_user.php</file>
+			<file>views\information\tmpl\joocm_request_login.php</file>
+			<file>views\information\tmpl\joocm_reset_failure.php</file>
+			<file>views\information\tmpl\joocm_reset_success.php</file>
+			<file>views\login\tmpl\joocm.php</file>
+			<file>views\login\tmpl\joocm.xml</file>
+			<file>views\login\tmpl\joocm_login.php</file>
+			<file>views\main\tmpl\joocm.php</file>
+			<file>views\main\tmpl\joocm.xml</file>
+			<file>views\main\tmpl\joocm_main.php</file>
+			<file>views\profile\tmpl\joocm.php</file>
+			<file>views\profile\tmpl\joocm.xml</file>
+			<file>views\profile\tmpl\joocm_profile.php</file>
+			<file>views\register\tmpl\joocm.php</file>
+			<file>views\register\tmpl\joocm.xml</file>
+			<file>views\register\tmpl\joocm_register.php</file>
+			<file>views\requestlogin\tmpl\joocm.php</file>
+			<file>views\requestlogin\tmpl\joocm.xml</file>
+			<file>views\requestlogin\tmpl\joocm_requestlogin.php</file>
+			<file>views\resetlogin\tmpl\joocm.php</file>
+			<file>views\resetlogin\tmpl\joocm.xml</file>
+			<file>views\resetlogin\tmpl\joocm_resetlogin.php</file>
+			<file>views\terms\tmpl\joocm.php</file>
+			<file>views\terms\tmpl\joocm.xml</file>
+			<file>views\terms\tmpl\joocm_terms.php</file>
+			<file>views\userlist\tmpl\joocm.php</file>
+			<file>views\userlist\tmpl\joocm.xml</file>
+			<file>views\userlist\tmpl\joocm_pagination.php</file>
+			<file>views\userlist\tmpl\joocm_userlist.php</file>
+			<file>views\whosonline</file>
+			<file>views\avatar.php</file>
+			<file>views\config.php</file>
+			<file>views\credits.php</file>
+			<file>views\install.php</file>
+			<file>views\interface.php</file>
+			<file>views\joocm.php</file>
+			<file>views\link.php</file>
+			<file>views\profilefield.php</file>
+			<file>views\profilefieldlist.php</file>
+			<file>views\profilefieldlistvalue.php</file>
+			<file>views\profilefieldset.php</file>
+			<file>views\terms.php</file>
+			<file>views\timeformat.php</file>
+			<file>views\user.php</file>
+			<file>views\usersync.php</file>
+		</site>
+	</remove>
+</install>

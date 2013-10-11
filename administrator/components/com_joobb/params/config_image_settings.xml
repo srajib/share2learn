@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="component">
+	<name>Image Configuration</name>
+	<author>Joo!BB Project</author>
+	<copyright>(C) 2007-2012 Joo!BB. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Parameters for individual Image Configuration</description>
+	<params>
+		<param name="enable_images" type="radio" default="1" label="COM_JOOBB_ENABLEIMAGESUPLOAD" description="COM_JOOBB_ENABLEIMAGESUPLOADDESC">
+			<option value="0">COM_JOOBB_NO</option>
+			<option value="1">COM_JOOBB_YES</option>
+		</param>
+		<param name="image_max_file_size" type="text" size="10" default="512000" label="COM_JOOBB_IMAGEMAXFILESIZE" description="COM_JOOBB_IMAGEMAXFILESIZEDESC" />
+		<param name="image_file_types" type="text" size="50" default="jpg,png,gif,bmp" label="COM_JOOBB_IMAGEFILETYPES" description="COM_JOOBB_IMAGEFILETYPESDESC" />
+		<param name="image_path" type="text" size="50" default="media/joobb/images" label="COM_JOOBB_IMAGEPATH" description="COM_JOOBB_IMAGEPATHDESC" />
+	</params>
+</install>

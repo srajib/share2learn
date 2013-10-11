@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="buttonset">
+	<name>Joo!BB - Black</name>
+	<author>Joo!BB Project</author>
+	<creationDate>March 2012</creationDate>
+	<copyright>(C) 2007-2012 Joo!BB Project. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Joo!BB - Black Button Set for Joo!BB.</description>
+	<buttonset translateable="1">
+		<button function="buttonCancel" text="" title="COM_JOOBB_BUTTONCANCEL" class="jbButton jbButtonCancel" />
+		<button function="buttonDelete" text="" title="COM_JOOBB_BUTTONDELETE" class="jbButton jbButtonDelete" />
+		<button function="buttonEdit" text="" title="COM_JOOBB_BUTTONEDIT" class="jbButton jbButtonEdit" />
+		<button function="buttonGo" text="" title="COM_JOOBB_BUTTONGO" class="jbButton jbButtonGo" />
+		<button function="buttonLockTopic" text="" title="COM_JOOBB_BUTTONLOCKTOPIC" class="jbButton jbButtonLockTopic" />
+		<button function="buttonMoveTopic" text="" title="COM_JOOBB_BUTTONMOVETOPIC" class="jbButton jbButtonMoveTopic" />
+		<button function="buttonNewTopic" text="" title="COM_JOOBB_BUTTONNEWTOPIC" class="jbButton jbButtonNewTopic" />
+		<button function="buttonPostReply" text="" title="COM_JOOBB_BUTTONPOSTREPLY" class="jbButton jbButtonPostReply" />
+		<button function="buttonPreview" text="" title="COM_JOOBB_BUTTONPREVIEW" class="jbButton jbButtonPreview" />
+		<button function="buttonQuote" text="" title="COM_JOOBB_BUTTONQUOTE" class="jbButton jbButtonQuote" />
+		<button function="buttonReportPost" text="" title="COM_JOOBB_BUTTONREPORT" class="jbButton jbButtonReport" />
+		<button function="buttonSearch" text="" title="COM_JOOBB_BUTTONSEARCH" class="jbButton jbButtonSearch" />
+		<button function="buttonSubmit" text="" title="COM_JOOBB_BUTTONSUBMIT" class="jbButton jbButtonSubmit" />
+		<button function="buttonUnlockTopic" text="" title="COM_JOOBB_BUTTONUNLOCKTOPIC" class="jbButton jbButtonUnlockTopic" />
+	</buttonset>
+	<sampleImage>joobb_black.png</sampleImage>
+</install>

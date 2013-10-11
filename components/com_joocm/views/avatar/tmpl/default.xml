@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JOOCM_AVATARLAYOUT">
+		<message>
+			<![CDATA[COM_JOOCM_AVATARLAYOUTDESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JOOCM_AVATARLAYOUT</name>
+		<description>COM_JOOCM_AVATARLAYOUTDESC</description>
+	</state>
+</metadata>

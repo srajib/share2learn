@@ -1,0 +1,23 @@
+/*
+# ------------------------------------------------------------------------
+# Free Slide SP1 - Slideshow module for Joomla 1.5
+# ------------------------------------------------------------------------
+# Copyright (C) 2010 JoomShaper.com. All Rights Reserved.
+# @license - GNU/GPL, see LICENSE.php,
+# Author: JoomShaper.com
+# Websites:  http://www.joomshaper.com -  http://www.joomxpert.com
+# ------------------------------------------------------------------------
+*/
+.fs-sp1{position:relative}
+.fs-sp1-content{background:#fff}
+.fs-sp1-inner{padding:10px}
+.fs-sp1-image{float:right;margin:0 0 0 40px}
+.fs-sp1-desc{overflow:hidden;position:relative}
+h2.fs-sp1-title{font-size:18px;line-height:normal;letter-spacing:normal;margin:5px 0}
+.fs-sp1-controllers{height:auto;position:absolute;bottom:10px;left:45%;z-index:1}
+.fs-sp1-prev,.fs-sp1-next,.fs-sp1-controllers span,.fs-sp1-controllers span.active{display:block;float:left;height:12px;margin-right:3px;width:12px;cursor:pointer}
+.fs-sp1-controllers span,.fs-sp1-controllers span.active{text-indent:-9999px}
+.fs-sp1-controllers span{background:url(../images/btn-slider.png) no-repeat scroll 0 0}
+.fs-sp1-next{background:url(../images/next.png) no-repeat scroll 0 0}
+.fs-sp1-prev{background:url(../images/prev.png) no-repeat scroll 0 0}
+.fs-sp1-controllers span.active{background:url(../images/btn-slider-active.png) no-repeat scroll 0 0}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="iconset">
+	<name>Joo!BB - Icon Set</name>
+	<author>Joo!BB Project</author>
+	<creationDate>April 2010</creationDate>
+	<copyright>(C) 2007-2010 Joo!BB Project. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.joobb.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Joo!BB - Icon Set.</description>
+	<iconset translateable="1">
+		<icon filename="icon-32-forum.png" group="iconBoard" function="forumNormal" title="BB_ICONFORUM" />
+		<icon filename="icon-32-forum_new.png" group="iconBoard" function="forumNewPosts" title="BB_ICONFORUMNEWPOSTS" />
+		<icon filename="icon-32-forum_locked.png" group="iconBoard" function="forumLocked" title="BB_ICONFORUMLOCKED" />
+		<icon filename="icon-32-post_post.png" group="iconPost" function="postPost" title="BB_ICONPOSTPOST" />
+		<icon filename="icon-32-post_exclamation.png" group="iconPost" function="postExclamation" title="BB_ICONPOSTEXCLAMATION" />
+		<icon filename="icon-32-post_question.png" group="iconPost" function="postQuestion" title="BB_ICONPOSTQUESTION" />
+		<icon filename="icon-32-post_idea.png" group="iconPost" function="postIdea" title="BB_ICONPOSTIDEA" />
+		<icon filename="icon-32-post_thumb_up.png" group="iconPost" function="postThumbUp" title="BB_ICONPOSTTHUMBUP" />
+		<icon filename="icon-32-post_thumb_down.png" group="iconPost" function="postThumbDown" title="BB_ICONPOSTTHUMBDOWN" />
+		<icon filename="icon-32-post_cool.png" group="iconPost" function="postCool" title="BB_ICONPOSTCOOL" />
+		<icon filename="icon-32-post_sad.png" group="iconPost" function="postSad" title="BB_ICONPOSTSAD" />
+		<icon filename="icon-32-post_help.png" group="iconPost" function="postHelp" title="BB_ICONPOSTHELP" />
+		<icon filename="icon-32-post_joomla.png" group="iconPost" function="postJoomla" title="BB_ICONPOSTJOOMLA" />
+		<icon filename="icon-12-topic_solved.png" group="iconTopic" function="topicSolved" title="BB_ICONTOPICSOLVED" />
+		<icon filename="icon-12-topic_trash.png" group="iconTopic" function="topicTrash" title="BB_ICONTOPICTRASH" />
+		<icon filename="icon-12-topic_sticky.png" group="iconTopic" function="topicSticky" title="BB_ICONTOPICSTICKY" />
+		<icon filename="icon-12-topic_locked.png" group="iconTopic" function="topicLocked" title="BB_ICONTOPICLOCKED" />
+		<icon filename="icon-12-topic_announcement.png" group="iconTopic" function="topicAnnouncement" title="BB_ICONTOPICANNOUNCEMENT" />
+	</iconset>
+</install>
